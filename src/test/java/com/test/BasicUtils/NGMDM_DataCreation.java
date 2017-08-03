@@ -26,13 +26,13 @@ public class NGMDM_DataCreation
 {
 	static Connection con;
 	static Statement stmt;
-	static LaunchBrowsers browsers;
-	static String browserName = "firefox";
+	static LaunchBrowsers browsers = new LaunchBrowsers();
+	//static String browserName = "firefox";
 	
 	@BeforeTest
 	public void dbconnection() throws Exception
 	{
-		browsers = new LaunchBrowsers();
+		;
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:oracledb","sys as sysdba", "amiitonoma07");
 		//con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:oracledb","abhaik", "abhaik");
@@ -281,7 +281,7 @@ public class NGMDM_DataCreation
 		System.out.println("First Change");
 		System.out.println("Second Change");
 		System.out.println("_______________qfId1");
-		WebDriver driver = browsers.launchBrowser(browserName);
+		WebDriver driver = browsers.launchBrowser();
 		Modules m = new Modules(driver);
 		m.sfdcCreateOpportunityWithThaymore("QF_Form_ID_1");
 		m.sfdcFillCreateQuotePage(false);

@@ -21,7 +21,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class LaunchBrowsers 
 {
-	static String url;	
+	static String hubUrl;
+	static String browserName;
+	static boolean runOnGrid=false;
 	//public static Logger logger = Logger.getLogger(LaunchBrowsers.class);
 	private static Logger logger = Logger.getLogger(LaunchBrowsers.class);
 	
@@ -40,7 +42,47 @@ public class LaunchBrowsers
 			prop.load(input);
 		}
 		catch(Exception e){}
-		url = prop.getProperty("hubUrl");
+		hubUrl = prop.getProperty("hubUrl");
+		browserName = prop.getProperty("browserName");
+		try
+		{
+			if(prop.getProperty("runOnGrid")!=null)
+			{
+				if(prop.getProperty("runOnGrid").trim().equalsIgnoreCase("true") && hubUrl!=null)
+				{
+					if(! hubUrl.trim().equalsIgnoreCase(""))
+					{
+						runOnGrid = true;
+					}
+				}
+			}
+		}
+		catch(Exception e){
+			runOnGrid = false;
+		}
+		
+		if(runOnGrid)
+		{
+			logger.info("Browser Configuration Detected : Grid Execution with '"+browserName+"' on HUB : " + hubUrl);
+		}
+		else
+		{
+			logger.info("Browser Configuration Detected : Local Execution with '"+browserName+"'");
+		}
+	}
+	
+	public WebDriver launchBrowser() throws Exception
+	{
+		if(runOnGrid)
+		{
+			//Grid Execution
+			return launchBrowser(browserName, "50", Platform.WINDOWS);
+		}
+		else
+		{
+			//Local Execution
+			return launchBrowser(browserName);
+		}
 	}
 	
 	public WebDriver launchBrowser(String browserName) throws Exception
@@ -64,10 +106,10 @@ public class LaunchBrowsers
 		}
 		else if(browserName.trim().equalsIgnoreCase("firefox"))
 		{
+			logger.info("Launching Firefox Local browser");
 			//System.setProperty("webdriver.firefox.marionette","C:\\Users\\abhaik\\SeleniumWorks\\Jars\\SeleniumUniversal\\BrowserDrivers\\geckodriver.exe");
 			System.setProperty("webdriver.firefox.marionette",".\\lib\\geckodriver.exe");
 			//System.setProperty("webdriver.gecko.driver",".\\lib\\geckodriver.exe");
-			logger.info("Launching Firefox Local browser");
 			FirefoxProfile fp = new FirefoxProfile(new File("C:\\Users\\abhaik\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\cv1ng57o.default"));
 			WebDriver driver = new FirefoxDriver(fp);
 			driver.manage().window().maximize();
@@ -109,7 +151,7 @@ public class LaunchBrowsers
 			cap.setBrowserName(browserName.trim());
 			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
 			logger.info("Launching Phantomjs Grid browser");
-			WebDriver driver = new RemoteWebDriver(new URL(url),cap);
+			WebDriver driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
 			return driver;
 		}
@@ -121,7 +163,7 @@ public class LaunchBrowsers
 			cap.setBrowserName(browserName.trim());
 			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
 			logger.info("Launching Phantomjs Grid browser");
-			WebDriver driver = new RemoteWebDriver(new URL(url),cap);
+			WebDriver driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
 			return driver;
 		}
@@ -133,7 +175,7 @@ public class LaunchBrowsers
 			cap.setBrowserName(browserName.trim());
 			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
 			logger.info("Launching Firefox Grid browser");
-			WebDriver driver = new RemoteWebDriver(new URL(url),cap);
+			WebDriver driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
 			return driver;
 		}
@@ -145,7 +187,7 @@ public class LaunchBrowsers
 			cap.setBrowserName(browserName.trim());
 			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
 			logger.info("Launching Chrome Grid browser");
-			WebDriver driver = new RemoteWebDriver(new URL(url),cap);
+			WebDriver driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
 			return driver;
 		}
@@ -157,7 +199,7 @@ public class LaunchBrowsers
 			cap.setBrowserName(browserName.trim());
 			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
 			logger.info("Launching IE Grid browser");
-			WebDriver driver = new RemoteWebDriver(new URL(url),cap);
+			WebDriver driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
 			return driver;
 		}

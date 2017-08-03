@@ -36212,3 +36212,9 @@ https://ciscosales--qtr.cs71.my.salesforce.com/resource/1492132160000/jquery22:8
 [INFO  - 2017-07-14T12:34:39.273Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-07-14T12:39:39.275Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
 [INFO  - 2017-07-14T12:44:39.277Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-03T12:48:32.212Z] GhostDriver - Main - running on port 44711
+[INFO  - 2017-08-03T12:48:33.045Z] Session [0edc4880-784a-11e7-83e8-cb068ec85422] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-03T12:48:33.045Z] Session [0edc4880-784a-11e7-83e8-cb068ec85422] - page.customHeaders:  - {}
+[INFO  - 2017-08-03T12:48:33.045Z] Session [0edc4880-784a-11e7-83e8-cb068ec85422] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-03T12:48:33.045Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 0edc4880-784a-11e7-83e8-cb068ec85422
+[INFO  - 2017-08-03T12:48:42.800Z] ShutdownReqHand - _handle - About to shutdown

@@ -16,8 +16,7 @@ import com.test.BasicUtils.Modules;
 
 public class _05_DealQualification 
 {
-	static LaunchBrowsers browsers;
-	static String browserName = "firefox";
+	static LaunchBrowsers browsers = new LaunchBrowsers();
 	
 	@Test
 	public void qfId1() throws Exception
@@ -25,7 +24,7 @@ public class _05_DealQualification
 		System.out.println("First Change");
 		System.out.println("Second Change");
 		System.out.println("_______________qfId1");
-		WebDriver driver = browsers.launchBrowser(browserName);
+		WebDriver driver = browsers.launchBrowser();
 		Modules m = new Modules(driver);
 		m.sfdcCreateOpportunityWithThaymore("QF_Form_ID_1");
 		m.sfdcFillCreateQuotePage(false);
