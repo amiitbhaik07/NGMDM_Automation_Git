@@ -36230,3 +36230,234 @@ https://ciscosales--qtr.cs71.my.salesforce.com/resource/1492132160000/jquery22:8
 [INFO  - 2017-08-04T05:27:33.825Z] Session [9e599e50-78d5-11e7-8f96-e79e807a22c5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
 [INFO  - 2017-08-04T05:27:33.826Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 9e599e50-78d5-11e7-8f96-e79e807a22c5
 [INFO  - 2017-08-04T05:27:45.731Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-08-04T07:23:12.150Z] GhostDriver - Main - running on port 18412
+[INFO  - 2017-08-04T07:23:13.216Z] Session [c68c8030-78e5-11e7-b403-87d5dd68ffc6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T07:23:13.216Z] Session [c68c8030-78e5-11e7-b403-87d5dd68ffc6] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T07:23:13.217Z] Session [c68c8030-78e5-11e7-b403-87d5dd68ffc6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-04T07:23:13.217Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c68c8030-78e5-11e7-b403-87d5dd68ffc6
+[INFO  - 2017-08-04T07:23:22.495Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-08-04T09:31:53.452Z] GhostDriver - Main - running on port 20604
+[INFO  - 2017-08-04T09:31:55.701Z] Session [c1753a30-78f7-11e7-aa2f-e7776c92f7c5] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T09:31:55.702Z] Session [c1753a30-78f7-11e7-aa2f-e7776c92f7c5] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T09:31:55.702Z] Session [c1753a30-78f7-11e7-aa2f-e7776c92f7c5] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-04T09:31:55.702Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c1753a30-78f7-11e7-aa2f-e7776c92f7c5
+[INFO  - 2017-08-04T09:32:05.474Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-08-04T09:38:56.126Z] GhostDriver - Main - running on port 45185
+[INFO  - 2017-08-04T09:38:56.820Z] Session [bc840280-78f8-11e7-b081-937fee43880c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T09:38:56.820Z] Session [bc840280-78f8-11e7-b081-937fee43880c] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T09:38:56.820Z] Session [bc840280-78f8-11e7-b081-937fee43880c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-04T09:38:56.831Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: bc840280-78f8-11e7-b081-937fee43880c
+[INFO  - 2017-08-04T09:43:56.123Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T09:48:56.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T09:53:56.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T09:58:56.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:03:56.122Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:08:56.177Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:13:56.177Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:18:56.227Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:23:56.228Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:28:56.278Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:33:56.277Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:38:56.328Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:43:56.327Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:48:56.378Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:53:56.377Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T10:58:56.429Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:03:56.429Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:08:56.470Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:13:56.469Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:18:56.410Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:23:56.410Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:28:56.410Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:33:56.411Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:38:56.410Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:43:56.410Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:48:56.411Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:53:56.377Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T11:58:56.377Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:03:56.427Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:08:56.426Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:13:56.436Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:18:56.437Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:23:56.505Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:28:56.505Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:33:56.559Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:38:56.555Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:43:56.594Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:48:56.632Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:53:56.631Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:58:56.681Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.655Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nd - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:26:44.863Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:31:44.899Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:36:44.929Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:41:44.963Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:46:45.006Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:51:45.005Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:56:45.051Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T13:01:45.082Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.653Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nd - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:31:26.516Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:36:26.547Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:41:26.583Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:46:26.614Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:51:26.645Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:56:26.654Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T13:01:26.692Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.654Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nd - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:28:27.737Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:33:27.778Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:38:27.816Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:43:27.855Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:48:27.855Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:53:27.887Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:58:27.919Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.653Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nd - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:26:59.568Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:31:59.609Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:36:59.640Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:41:59.676Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:46:59.709Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:51:59.708Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:56:59.740Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T13:01:59.770Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.655Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+nd - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:29:03.938Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:34:03.968Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:39:04.000Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:44:04.003Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:49:04.034Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:54:04.073Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:59:04.104Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.662Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+ession.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-04T12:42:34.435Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 637e4000-7912-11e7-8c50-ef51ff4d0943
+[INFO  - 2017-08-04T12:47:33.423Z] SessionManagerReqHand - _cleanupWindowlessSe[INFO  - 2017-08-04T12:47:33.812Z] SessionManagerReqHand - [INFO  - 2017-08-04T12:52:33.473Z] SessionManagerReqHand - _cleanupWindowlessSe[INFO  - 2017-08-04T12:52:33.862Z] SessionManagerReqHand - [INFO  - 2017-08-04T12:57:33.474Z] SessionManagerReqHand - _cleanupWindowlessSe[INFO  - 2017-08-04T12:57:33.862Z] SessionManagerReqHand - [INFO  - 2017-08-04T14:05:27.652Z] SessionManagerReqHand - _cleanupWindowlessSe[INFO  - 2017-08-04T14:05:27.655Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+-embed-player-vfliw0VSF/www-embed-player.js:374:19
+Fg@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371:355
+ja@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364:65
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411:197
+[ERROR - 2017-08-04T12:42:52.590Z] Session [637f2a60-7912-11e7-89ef-dbfd43ff1a18] - page.onError - stack:
+  pause (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:6492)
+  JV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423)
+  uV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394)
+  kra (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157)
+  p1 (https://www.youtube.com/yts[INFO  - 2017-08-04T12:47:34.823Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:52:34.866Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:57:34.905Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.710Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411)
+[INFO  - 2017-08-04T12:47:33.174Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:52:33.214Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:57:33.257Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.783Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[ERROR - 2017-08-04T14:05:42.155Z] Session [637f2a60-7912-11e7-89ef-dbfd43ff1a18] - page.onError - msg: TypeError: undefined is not an object (evaluating 'u.chat_frame.find')
+[ERROR - 2017-08-04T14:05:42.155Z] Session [637f2a60-7912-11e7-89ef-dbfd43ff1a18] - page.onError - stack:
+  onopen (https://cdn-jp.gsecondscreen.com/static/tac.min.js:3)
+nous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T12:57:36.388Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-08-04T14:05:27.605Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+e7-90d9-993647cf3fef] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T12:58:20.613Z] Session [976b2de0-7914-11e7-90d9-993647cf3fef] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T12:58:20.613Z] Session [976b2de0-7914-11e7-90d9-993647cf3fef] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-04T12:58:20.614Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 976b2de0-7914-11e7-90d9-993647cf3fef[[INFO  - 2017-08-04T12:58:35.560Z] ShutdownReqHand - _handle - About to shutdown
+FO  - 2017-08-04T12:58:30.714Z] ShutdownReqHand - _handle - About to shutdown
+/en_US/base.js:6492:34
+JV@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423:51
+uV@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394:182
+kra@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157:232
+p1@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4135:103
+https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:7237:167
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:373:293
+[native code]
+cb@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:374:19
+Fg@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371:355
+ja@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364:65
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411:197
+[ERROR - 2017-08-04T12:58:30.593Z] Session [97698030-7914-11e7-a6fb-116011f7b79a] - page.onError - stack:
+  pause (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:6492)
+  JV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423)
+  uV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394)
+  kra (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157)
+  p1 (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4135)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:7237)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:373)
+  (anonymous function) (:0)
+  cb (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:374)
+  Fg (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371)
+  ja (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411)
+[INFO  - 2017-08-04T12:58:44.393Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-08-04T14:55:26.471Z] GhostDriver - Main - running on port 34297
+[INFO  - 2017-08-04T14:55:27.632Z] Session [f3e8bff0-7924-11e7-af67-5fc49c05b5b2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT [INFO  - 2017-08-04T14:55:27.927Z] Session [f418f7b0-7924-11e7-88e5-c500a1a826fd] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T14:55:27.927Z] Session [f418f7b0-7924-11e7-88e5-c500a1a826fd] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T14:55:27.927Z] Session [f418f7b0-7924-11e7-88e5-c500a1a826fd] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserCo[INFO  - 2017-08-04T14:55:37.389Z] ShutdownReqHand - _handle - About to shutdo[INFO  - 2017-08-04T14:55:40.577Z] ShutdownReqHand - _handle - About to shutdo[ERROR - 2017-08-04T14:55:49.568Z] Session [f3e627e0-7924-11e7-8eb0-c34c7b98e570] - page.onError - msg: pause@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:6492:34
+JV@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423:51
+uV@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394:182
+kra@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157:232
+p1@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4135:103
+https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:7237:167
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:373:293
+[native code]
+cb@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:374:19
+Fg@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371:355
+ja@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364:65
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411:197
+[ERROR - 2017-08-04T14:55:49.569Z] Session [f3e627e0-7924-11e7-8eb0-c34c7b98e570] - page.onError - stack:
+  pause (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:6492)
+  JV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423)
+  uV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394)
+  kra (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157)
+  p1 (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4135)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:7237)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:373)
+  (anonymous function) (:0)
+  cb (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:374)
+  Fg (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371)
+  ja (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411)
+[INFO  - 2017-08-04T14:56:06.123Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2017-08-04T15:00:42.354Z] GhostDriver - Main - running on port 36760
+[INFO  - 2017-08-04T15:00:43.257Z] Session [afeb1720-7925-11e7-8996-2f4136ca97[INFO  - 2017-08-04T15:00:43.258Z] Session [b004e0b0-7925-11e7-87e0-c96cf5c6b3[INFO  - 2017-08-04T15:00:44.029Z] Session [b0818ac0-7925-11e7-9d47-834e1aae95a6] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T15:00:44.030Z] Session [b0818ac0-7925-11e7-9d47-834e1aae95a6] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T15:00:44.030Z] Session [b0818ac0-7925-11e7-9d47-834e1aae95a6] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyTyp[INFO  - 2017-08-04T15:00:57.337Z] ShutdownReqHand - _handle - About to shutdown
+FO  - 2017-08-04T15:00:53.784Z] ShutdownReqHand - _handle - About to shutdown
+FO  - 2017-08-04T15:00:49.801Z] ShutdownReqHand - _handle - About to shutdown
+FO  - 2017-08-04T15:00:44.890Z] Session [b1042840-7925-11e7-890d-5383ba4000a1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-08-04T15:00:44.890Z] Session [b1042840-7925-11e7-890d-5383ba4000a1] - page.customHeaders:  - {}
+[INFO  - 2017-08-04T15:00:44.890Z] Session [b1042840-7925-11e7-890d-5383ba4000a1] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-08-04T15:00:44.891Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b1042840-7925-11e7-890d-5383ba4000a1
+[INFO  - 2017-08-04T15:01:03.404Z] ShutdownReqHand - _handle - About to shutdown
+ - page.onError - msg: pause@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:6492:34
+JV@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423:51
+uV@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394:182
+kra@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157:232
+p1@https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4135:103
+https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:7237:167
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:373:293
+[native code]
+cb@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:374:19
+Fg@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371:355
+ja@https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364:65
+https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411:197
+[ERROR - 2017-08-04T15:01:01.027Z] Session [b0e2bd90-7925-11e7-962d-ed2b410350f8] - page.onError - stack:
+  pause (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:6492)
+  JV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3423)
+  uV (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:3394)
+  kra (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4157)
+  p1 (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:4135)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/player-vfl8KhWdC/en_US/base.js:7237)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:373)
+  (anonymous function) (:0)
+  cb (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:374)
+  Fg (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:371)
+  ja (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:364)
+  (anonymous function) (https://www.youtube.com/yts/jsbin/www-embed-player-vfliw0VSF/www-embed-player.js:411)
+[INFO  - 2017-08-04T15:01:14.570Z] ShutdownReqHand - _handle - About to shutdown
