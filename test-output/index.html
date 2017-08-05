@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\abhaik\AppData\Local\Temp\testng-eclipse-970490998\testng-customsuite.xml</span>
+                    <span>C:\Users\abhaik\AppData\Local\Temp\testng-eclipse-2045811631\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.NGMDM_Tabs.TestPOM" hash-for-method="test">test</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.NGMDM_Tabs._05_DealQualification" hash-for-method="qfId1">qfId1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -119,26 +119,25 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.NGMDM_Tabs.TestPOM</span>
+              <span class="class-name">test.NGMDM_Tabs._05_DealQualification</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test">
-                  </a> <!-- test -->
-                  <span class="method-name">test</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@kdfid=&apos;submitandreview&apos; and @kdfapp=&apos;Quoting&apos; and @kdfpage=&apos;reviewandsubmit&apos; and @value=&apos;Finish and Save&apos;] (tried for 200 second(s) with 500 MILLISECONDS interval)
+                  <a name="qfId1">
+                  </a> <!-- qfId1 -->
+                  <span class="method-name">qfId1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Global Price List in US Dollars
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;ABHAIK-WS01&apos;, ip: &apos;10.65.244.51&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=37.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 6e880354-b298-47bb-b8fd-90ea738873e8
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at test.BasicUtils.BasicUtils.waitForElementClickable(BasicUtils.java:305)
-	at test.BasicUtils.BasicUtils.click(BasicUtils.java:462)
-	at test.PageObjects.ReviewAndSubmitPage._03_finishAndSaveFromRnSTab(ReviewAndSubmitPage.java:93)
-	at test.NGMDM_Tabs.TestPOM.test(TestPOM.java:35)
+System info: host: &apos;ABHAIK-WS01&apos;, ip: &apos;10.65.244.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at test.BasicUtils.BasicUtils.selectOption(BasicUtils.java:1116)
+	at test.PageObjects.SFDC_CreateQuotePage._05_selectSpecificPriceList(SFDC_CreateQuotePage.java:80)
+	at test.PageObjects.SFDC_CreateQuotePage._02_selectDefaultPriceList(SFDC_CreateQuotePage.java:63)
+	at test.PageObjects.SFDC_CreateQuotePage._00_proceedWithDefaultValues(SFDC_CreateQuotePage.java:22)
+	at test.NGMDM_Tabs._05_DealQualification.qfId1(_05_DealQualification.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,7 +171,7 @@ Session ID: 6e880354-b298-47bb-b8fd-90ea738873e8
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\abhaik\AppData\Local\Temp\testng-eclipse-970490998\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\abhaik\AppData\Local\Temp\testng-eclipse-2045811631\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +180,7 @@ Session ID: 6e880354-b298-47bb-b8fd-90ea738873e8
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.NGMDM_Tabs.TestPOM&quot;/&gt;
+      &lt;class name=&quot;test.NGMDM_Tabs._05_DealQualification&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -223,14 +222,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test')
-data.setCell(0, 2, 'test.NGMDM_Tabs.TestPOM')
-data.setCell(0, 3, 656539);
+data.setCell(0, 1, 'qfId1')
+data.setCell(0, 2, 'test.NGMDM_Tabs._05_DealQualification')
+data.setCell(0, 3, 238017);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -256,11 +255,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.NGMDM_Tabs.TestPOM</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.NGMDM_Tabs._05_DealQualification</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">test</span>
+                <span class="method-name">qfId1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

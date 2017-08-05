@@ -101,7 +101,7 @@ public class Modules
 	
 	public void sfdcCreateOpportunityWithThaymore(String optyName) throws Exception
 	{
-		sfdcLogin(Constants.defaultSfdcAm, "cisco123");
+		sfdcLogin(Constants.defaultSfdcAm_US, "cisco123");
 		basic.click(ObjectRepository.createNew_tabdropdown);
 		basic.click(ObjectRepository.sfdc_opportunity_link);
 		basic.click(ObjectRepository.sfdc_continue_button);
@@ -138,7 +138,7 @@ public class Modules
 	
 	public void sfdcCreateOpportunity_Emear(String optyName) throws Exception
 	{
-		sfdcLogin(Constants.sfdcAm_emear, "cisco123");
+		sfdcLogin(Constants.defaultSfdcAm_EMEAR, "cisco123");
 		basic.click(ObjectRepository.createNew_tabdropdown);
 		basic.click(ObjectRepository.sfdc_opportunity_link);
 		basic.click(ObjectRepository.sfdc_continue_button);

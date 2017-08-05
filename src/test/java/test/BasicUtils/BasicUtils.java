@@ -257,6 +257,16 @@ public class BasicUtils
 		driver.close();
 	}
 	
+	public void pressEnterUsingActions() throws Exception
+	{
+		new Actions(driver).sendKeys(Keys.ENTER).build().perform();
+	}
+	
+	public void pressSpaceUsingActions(String xpath) throws Exception
+	{
+		new Actions(driver).moveToElement(driver.findElement(By.xpath(xpath))).sendKeys(Keys.SPACE).build().perform();
+	}
+	
 	public boolean knowIfAppears(String xpath)
 	{
 		try
@@ -709,11 +719,6 @@ public class BasicUtils
 		waitForElementClickable(xpath1);
 		driver.findElement(By.xpath(xpath1)).click();		
 		logger.debug("Successfully typed text '"+text+"' on XPath = "+xpath);
-	}
-	
-	public void typeTextAutopopulate_id(String id, String text) throws Exception
-	{
-		
 	}
 	
 	public void clearText(String xpath) throws Exception

@@ -19,8 +19,8 @@ public class Constants {
 	
 	public static final String preLoaderXpath = "//img[contains(@src,'preloader')]";
 	
-	public static final String defaultSfdcAm = "thaymore";
-	public static final String sfdcAm_emear = "beheard";
+	public static final String defaultSfdcAm_US = "thaymore";
+	public static final String defaultSfdcAm_EMEAR = "beheard";
 	public static String sfdc_sandbox = "qtr";
 	
 	

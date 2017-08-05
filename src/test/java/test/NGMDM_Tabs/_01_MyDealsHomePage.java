@@ -72,7 +72,7 @@ public class _01_MyDealsHomePage
 	
 	
 	
-	/*@Test
+	@Test
 	public static void _01MyDHPge_TC01_Verify_Data_displayed_by_default_for_DDA_Admin() throws Exception
 	{
 		LaunchBrowsers browsers = new LaunchBrowsers();
@@ -995,7 +995,7 @@ public class _01_MyDealsHomePage
 		basic.scrollIntoView(ObjectRepository.value_273);
 		basic.validateContains(ObjectRepository.value_273, "MAMANIK");
 	}
-*/
+
 	
 	
 	

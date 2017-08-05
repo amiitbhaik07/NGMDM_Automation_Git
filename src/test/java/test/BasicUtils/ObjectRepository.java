@@ -5,6 +5,7 @@ public class ObjectRepository
 	//Do not delete / edit 
 	public static int valueCounterInteger = 430;
 	
+	
 	//URLs and Logins :
 	public static String ciscoLogin_Url = "https://sso-test.cisco.com/autho/forms/CECLogin.html";
 	public static String mdmProxy_Url = "http://mdmui-wstg.cloudapps.cisco.com/mdmui/rest/proxyHome";
@@ -74,6 +75,9 @@ public class ObjectRepository
 	//public static String value_1 = "http://mdmui-wstg.cloudapps.cisco.com/mdmui/rest/proxyHome";
 	public static String value_15 = "//*[@kdfid='deleteBtn' and @kdfapp='mdmUI' and @kdfpage='deletepopup']";
 	public static String value_26 = "//*[@kdfid='dealPricing' and @kdfapp='mdmUI' and @kdfpage='leftBar']/span";
+	public static String slideMenu = "//*[@kdfid='slideMenu' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
+	public static String dealHeadershowdetails = "//*[@kdfid='dealHeadershowdetails' and @kdfapp='mdmUI' and @kdfpage='dealheaderDetails']";
+	public static String subMenuArrow = "//*[@kdfid='sub-menu-arrow' and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_16 = "//*[@kdfid='topDPSaveAndPublish' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
 	public static String value_27 = "//*[@kdfid='fmvRevenue-Product' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
 	public static String value_13 = "//*[@kdfid='expandAll' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
@@ -267,6 +271,7 @@ public class ObjectRepository
 	public static String value_161 = "//*[@kdfid='lookuptext_173' and @kdfapp='Quoting' and @kdfpage='qualform' and contains(@value,'JOHN HURLEY')]";
 	public static String value_183 = "19";
 	public static String value_140 = "//*[@kdfid='qualification' and @kdfapp='mdmUI' and @kdfpage='leftBar']/span";
+	public static String auditHistoryTab = "//*[@kdfid='auditHistory' and @kdfapp='mdmUI' and @kdfpage='leftBar']";
 	public static String value_162 = "//*[@kdfid='lookuptext_171' and @kdfapp='Quoting' and @kdfpage='qualform' and contains(@value,'JOHN HURLEY')]";
 	public static String value_184 = "21";
 	public static String value_196 = "//*[@kdfid='_RC_002' and @kdfapp='Quoting']";
@@ -388,15 +393,18 @@ public class ObjectRepository
 	public static String value_352 = "//td[contains(text(),'PAUCLARK')]/preceding-sibling::td/input[contains(@kdfid,'PAUCLARK')]";
 	public static String value_276 = "//*[starts-with(@kdfid,'optyName-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_353 = "//*[@kdfid='savebtn' and @kdfapp='mdmUI' and @kdfpage='changeAccess']";
+	public static String cancelButtonChangeAccess = "//*[@kdfid='cancelbtn' and @kdfapp='mdmUI' and @kdfpage='changeAccess']";
 	public static String value_277 = "//*[starts-with(@kdfid,'optyOwner-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_310 = "//*[@kdfid='exesummaryGrossMargin-Total' and @kdfapp='mdmUI' and @kdfpage='executiveSummary']";
 	public static String value_354 = "//*[starts-with(@kdfid,'editicon-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
+	public static String dealStatusSelectbox = "//div[@selected-val='currentDealStatus']";
 	public static String value_278 = "//*[starts-with(@kdfid,'accName-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_311 = "//*[@kdfid='exesummaryDealId' and @kdfapp='mdmUI' and @kdfpage='executiveSummary']";
 	public static String value_355 = "//*[@kdfid='editDealServiceDD' and @kdfapp='mdmUI' and @kdfpage='editDeal']";
 	public static String value_279 = "//*[starts-with(@kdfid,'recentSubmission-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_312 = "//*[@kdfid='dealStatus' and @kdfapp='mdmUI' and @kdfpage='advancedSearch']/select";
 	public static String value_356 = "//*[@kdfid='editDealProductDD' and @kdfapp='mdmUI' and @kdfpage='editDeal']";
+	public static String editDealSecondaryDD = "//*[@kdfid='editDealSecondaryDD' and @kdfapp='mdmUI' and @kdfpage='editDeal']";
 	public static String value_313 = "//*[@kdfid='exesummaryDealId' and @kdfapp='mdmUI' and @kdfpage='executiveSummary' and string-length(text())=8]";
 	public static String value_357 = "//*[@kdfid='editDealSave' and @kdfapp='mdmUI' and @kdfpage='editDeal']";
 	public static String value_314 = "//*[@kdfid='dealType' and @kdfapp='mdmUI' and @kdfpage='advancedSearch']/select";
@@ -408,6 +416,7 @@ public class ObjectRepository
 	public static String value_319 = "//*[starts-with(@kdfid,'dealType-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_280 = "//*[starts-with(@kdfid,'dealNetPrice-') and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_281 = "//*[@kdfid='ScenarioBrowser' and @kdfapp='mdmUI' and @kdfpage='leftBar']/span";
+	public static String createNewScenario = "//*[@kdfid='CreateNewScenario' and @kdfapp='mdmUI' and @kdfpage='leftBar']/span";
 	public static String value_282 = "//*[@kdfid='preFmvNetPrice-Product' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
 	public static String value_283 = "//*[@kdfid='preFmvNetPrice-TSS' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
 	public static String value_340 = "//table[contains(@class,'table')]/descendant::thead/tr[1]/descendant::a[text()='Account Name']";
@@ -518,4 +527,7 @@ public class ObjectRepository
 	public static String value_380 = "//input[@type='text']";
 	public static String value_381 = "//*[@kdfid='addNewProxy' and @kdfapp='mdmUI' and @kdfpage='myDeals']";
 	public static String value_382 = "//*[@kdfid='addproxy' and @kdfapp='mdmUI' and @kdfpage='existingProxy']";
+	
+	
+	public static String regularSearchDealID_textbox = "//input[@placeholder='Search Deal ID']";
 }
