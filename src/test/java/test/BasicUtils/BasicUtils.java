@@ -47,7 +47,7 @@ public class BasicUtils
 		waitForAppearance = new WebDriverWait(driver,Constants.ifVisibleTimeoutSeconds);
 	}
 	
-	void waitForPreloaderDisappear() throws Exception
+	public void waitForPreloaderDisappear() throws Exception
 	{
 		logger.trace("Waiting for Pre-loader to Disappear");
 		pause(Constants.preLoaderDefaultPauseMillis);
@@ -55,7 +55,7 @@ public class BasicUtils
 		logger.trace("Waited for Pre-loader to Disappear");
 	}
 	
-	void waitForPreloaderAppear() throws Exception
+	public void waitForPreloaderAppear() throws Exception
 	{
 		logger.trace("Waiting for Pre-loader to Disappear");
 		pause(Constants.preLoaderDefaultPauseMillis);
@@ -205,7 +205,27 @@ public class BasicUtils
 	
 	
 	
-	
+	public boolean isRewrite()
+	{	
+		try
+		{
+			waitForPageToLoad1();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		String url = getCurrentUrl().trim();
+		if(url.contains("#"))
+		{
+			logger.info("It is a Re-Write Page : " + url);
+			return true;
+		}
+		else
+		{
+			logger.info("It is a NON - Re-Write Page : " + url);
+			return false;
+		}
+	}
 	
 	public String getTimeStamp()
 	{

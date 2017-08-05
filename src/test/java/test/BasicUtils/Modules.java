@@ -36,8 +36,7 @@ public class Modules
 	
 	public boolean isRewrite()
 	{
-		WebDriverWait wait = new WebDriverWait(driver,150);
-		
+		WebDriverWait wait = new WebDriverWait(driver,150);		
 		try
 		{
 			basic.waitForPageToLoad1();
@@ -66,7 +65,7 @@ public class Modules
 		}
 	}
 	
-	public void selectReasonDropdownIfAppears_RNS_page() throws Exception
+	public void selectReasonDropdownIfAppears() throws Exception
 	{
 		if(basic.knowIfAppears(ObjectRepository.value_124))
 		{
@@ -491,8 +490,8 @@ public class Modules
 	
 	public void saveAndContinueFromRnSTab() throws Exception
 	{
-		selectReasonDropdownIfAppears_RNS_page();
-		basic.click(ObjectRepository.value_89);
+		selectReasonDropdownIfAppears();
+		basic.click(ObjectRepository.finishAndSave_rns_page);
 		logger.info("Clicked on Save and Continue on Review and Submit tab");
 	}
 	
@@ -1234,7 +1233,7 @@ public class Modules
 	
 	public void reopenDealCCW() throws Exception
 	{
-		basic.click(ObjectRepository.value_89);
+		basic.click(ObjectRepository.finishAndSave_rns_page);
 		basic.click(ObjectRepository.value_240);
 	}
 	

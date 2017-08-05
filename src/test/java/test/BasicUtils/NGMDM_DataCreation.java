@@ -290,7 +290,7 @@ public class NGMDM_DataCreation
 		m.saveAndContinueFromItemsTab();
 		m.addSpecificNSDiscount(20, 0, 0);
 		m.saveAndContinueFromDiscountsTab();
-		m.selectReasonDropdownIfAppears_RNS_page();
+		m.selectReasonDropdownIfAppears();
 		m.saveAndContinueFromRnSTab();
 		m.continueToQualForm();
 		String dealID = m.getDealIDFromSFDCQualFormUI();

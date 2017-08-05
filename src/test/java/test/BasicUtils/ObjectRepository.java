@@ -184,7 +184,8 @@ public class ObjectRepository
 	public static String createDeal_button = "//*[@kdfid='createDealBtn' and @kdfapp='Quoting']";
 	
 	
-	public static String value_89 = "//*[@kdfid='submitandreview' and @kdfapp='Quoting' and @kdfpage='reviewandsubmit']";
+	public static String finishAndSave_rns_page = "//*[@kdfid='submitandreview' and @kdfapp='Quoting' and @kdfpage='reviewandsubmit' and @value='Finish and Save']";
+	public static String submitQuoteForApproval_rns_page = "//*[@kdfid='submitandreview' and @kdfapp='Quoting' and @kdfpage='reviewandsubmit'  and @value='Submit Quote for Approval']";
 	
 	public static String saveAndCont_dnc_button = "//*[@kdfid='pdrButtonSaveandContinue' and @kdfapp='Quoting' and @kdfpage='discountscreditstab']";
 	public static String value_43 = "//input[@id='opp4']";

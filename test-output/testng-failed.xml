@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.NGMDM_Tabs._05_DealQualification">
+      <class name="test.NGMDM_Tabs.TestPOM">
         <methods>
-          <include name="qfId1"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- test.NGMDM_Tabs._05_DealQualification -->
+      </class> <!-- test.NGMDM_Tabs.TestPOM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

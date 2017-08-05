@@ -91,11 +91,14 @@ public class LaunchBrowsers
 		{
 			logger.info("Browser Configuration Detected : Local Execution with '"+defaultBrowserName+"'");
 		}
+		
+		System.out.println("Property File Loaded Successfully");
 	}
 	
 	public static WebDriver launchBrowser() throws Exception
 	{
-		System.out.println("===============Launching Browser");
+		loadPropertyFile();
+		System.out.println("===============Launching Browser : " + defaultBrowserName);
 		if(runOnGrid)
 		{
 			//Grid Execution
