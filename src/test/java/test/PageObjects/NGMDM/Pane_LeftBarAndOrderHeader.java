@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.NGMDM;
 
 import org.apache.log4j.Logger;
 
@@ -6,18 +6,18 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
+public class Pane_LeftBarAndOrderHeader extends Pane_MyDealsTop
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader(BasicUtils basic)
+	public Pane_LeftBarAndOrderHeader(BasicUtils basic)
 	{
 		super(basic);
 		this.basic = basic;
 	}	
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _01_openDealPricing() throws Exception
+	public Pane_LeftBarAndOrderHeader _01_openDealPricing() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_26))
 		{
@@ -27,7 +27,7 @@ public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
 		return this;
 	}
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _02_openScenarioBrowser() throws Exception
+	public Pane_LeftBarAndOrderHeader _02_openScenarioBrowser() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_281))
 		{
@@ -37,7 +37,7 @@ public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
 		return this;
 	}
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _03_createNewScenario() throws Exception
+	public Pane_LeftBarAndOrderHeader _03_createNewScenario() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.createNewScenario))
 		{
@@ -47,7 +47,7 @@ public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
 		return this;
 	}
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _04_openQualification() throws Exception
+	public Pane_LeftBarAndOrderHeader _04_openQualification() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_140))
 		{
@@ -57,7 +57,7 @@ public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
 		return this;
 	}
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _05_openDealSummary() throws Exception
+	public Pane_LeftBarAndOrderHeader _05_openDealSummary() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_255))
 		{
@@ -67,7 +67,7 @@ public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
 		return this;
 	}
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _06_openAuditHistory() throws Exception
+	public Pane_LeftBarAndOrderHeader _06_openAuditHistory() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.auditHistoryTab))
 		{
@@ -77,7 +77,7 @@ public class NGMDM_Pane_LeftBarAndOrderHeader extends NGMDM_Pane_MyDealsTop
 		return this;
 	}
 	
-	public NGMDM_Pane_LeftBarAndOrderHeader _07_showDetailsHeader() throws Exception
+	public Pane_LeftBarAndOrderHeader _07_showDetailsHeader() throws Exception
 	{
 		basic.click(ObjectRepository.dealHeadershowdetails);
 		return this;

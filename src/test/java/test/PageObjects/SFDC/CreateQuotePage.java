@@ -1,22 +1,23 @@
-package test.PageObjects;
+package test.PageObjects.SFDC;
 
 import org.apache.log4j.Logger;
 
 import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
+import test.PageObjects.CCW.ItemsPage;
 
-public class SFDC_CreateQuotePage 
+public class CreateQuotePage 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public SFDC_CreateQuotePage(BasicUtils basic)
+	public CreateQuotePage(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public CCW_ItemsPage _00_proceedWithDefaultValues(boolean isRnsd) throws Exception
+	public ItemsPage _00_proceedWithDefaultValues(boolean isRnsd) throws Exception
 	{
 		_01_clickRadioButton(isRnsd);
 		_02_selectDefaultPriceList();
@@ -25,7 +26,7 @@ public class SFDC_CreateQuotePage
 		return _08_clickCreateQuoteButton();
 	}
 	
-	public SFDC_CreateQuotePage _01_clickRadioButton(boolean isRnsd) throws Exception
+	public CreateQuotePage _01_clickRadioButton(boolean isRnsd) throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_createQuote_label);
 		basic.pause(5000);
@@ -58,22 +59,22 @@ public class SFDC_CreateQuotePage
 		return this;
 	}
 	
-	public SFDC_CreateQuotePage _02_selectDefaultPriceList() throws Exception
+	public CreateQuotePage _02_selectDefaultPriceList() throws Exception
 	{
 		return _05_selectSpecificPriceList("Global Price List in US Dollars");
 	}
 	
-	public SFDC_CreateQuotePage _03_selectDefaultBuyMethod() throws Exception
+	public CreateQuotePage _03_selectDefaultBuyMethod() throws Exception
 	{
 		return _06_selectSpecificBuyMethod("Cisco");
 	}
 	
-	public SFDC_CreateQuotePage _04_selectDefaultDealCategory() throws Exception
+	public CreateQuotePage _04_selectDefaultDealCategory() throws Exception
 	{
 		return _07_selectSpecificDealCategory("Outsource");
 	}
 	
-	public SFDC_CreateQuotePage _05_selectSpecificPriceList(String priceList) throws Exception
+	public CreateQuotePage _05_selectSpecificPriceList(String priceList) throws Exception
 	{
 		if(basic.isRewrite())
 		{
@@ -87,7 +88,7 @@ public class SFDC_CreateQuotePage
 		return this;
 	}
 	
-	public SFDC_CreateQuotePage _06_selectSpecificBuyMethod(String buyMethod) throws Exception
+	public CreateQuotePage _06_selectSpecificBuyMethod(String buyMethod) throws Exception
 	{
 		if(basic.isRewrite())
 		{
@@ -101,7 +102,7 @@ public class SFDC_CreateQuotePage
 		return this;
 	}
 	
-	public SFDC_CreateQuotePage _07_selectSpecificDealCategory(String dealCategory) throws Exception
+	public CreateQuotePage _07_selectSpecificDealCategory(String dealCategory) throws Exception
 	{
 		if(basic.isRewrite())
 		{
@@ -115,7 +116,7 @@ public class SFDC_CreateQuotePage
 		return this;
 	}
 	
-	public CCW_ItemsPage _08_clickCreateQuoteButton() throws Exception
+	public ItemsPage _08_clickCreateQuoteButton() throws Exception
 	{
 		if(basic.isRewrite())
 		{
@@ -126,7 +127,7 @@ public class SFDC_CreateQuotePage
 			basic.click(ObjectRepository.createDeal_button);
 		}
 		logger.info("Clicked on Create Quote on Quote Initiation Page");
-		return new CCW_ItemsPage(basic);
+		return new ItemsPage(basic);
 	}
 	
 	

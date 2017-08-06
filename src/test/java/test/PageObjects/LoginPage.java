@@ -5,6 +5,8 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Constants;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
+import test.PageObjects.NGMDM.Page_MyDealsHomepage;
+import test.PageObjects.SFDC.HomePage;
 
 public class LoginPage 
 {
@@ -16,7 +18,7 @@ public class LoginPage
 		this.basic = basic;
 	}
 	
-	public SFDC_HomePage _01_sfdcLogin(String username, String password) throws Exception
+	public HomePage _01_sfdcLogin(String username, String password) throws Exception
 	{
 		basic.clearBrowserCache();
 		basic.justNavigate(ObjectRepository.salesforce_url);
@@ -29,20 +31,20 @@ public class LoginPage
 			basic.click(ObjectRepository.sfdc_changePasswordCancel_button);
 		}
 		logger.info("SFDC Login Successful for '"+uname+"' / '"+password+"' for URL : " + ObjectRepository.salesforce_url);
-		return new SFDC_HomePage(basic);
+		return new HomePage(basic);
 	}
 	
-	public SFDC_HomePage _02_1_sfdcLoginDefaultAM_US() throws Exception
+	public HomePage _02_1_sfdcLoginDefaultAM_US() throws Exception
 	{
 		return _01_sfdcLogin(Constants.defaultSfdcAm_US, "cisco123");
 	}
 	
-	public SFDC_HomePage _02_2_sfdcLoginDefaultAM_EMEAR() throws Exception
+	public HomePage _02_2_sfdcLoginDefaultAM_EMEAR() throws Exception
 	{
 		return _01_sfdcLogin(Constants.defaultSfdcAm_EMEAR, "cisco123");
 	}
 	
-	public NGMDM_Page_MyDealsHomepage _03_ngmdmLogin(String userName) throws Exception
+	public Page_MyDealsHomepage _03_ngmdmLogin(String userName) throws Exception
 	{
 		basic.clearBrowserCache();
 		basic.justNavigate(ObjectRepository.mdmProxy_Url);
@@ -51,7 +53,7 @@ public class LoginPage
 		basic.click(ObjectRepository.login_button);
 		basic.typeText(ObjectRepository.proxyId_tb, userName);
 		basic.click(ObjectRepository.proxyIdSubmit_button);
-		return new NGMDM_Page_MyDealsHomepage(basic);
+		return new Page_MyDealsHomepage(basic);
 	}
 	
 	

@@ -1,22 +1,23 @@
-package test.PageObjects;
+package test.PageObjects.CCW;
 
 import org.apache.log4j.Logger;
 
 import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
+import test.PageObjects.SFDC.NSReviewAndSubmitPage;
 
-public class CCW_QualFormPage 
+public class QualFormPage 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public CCW_QualFormPage(BasicUtils basic)
+	public QualFormPage(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public CCW_QualFormPage _01_sfdcFillQualForm(int qualFormId) throws Exception
+	public QualFormPage _01_sfdcFillQualForm(int qualFormId) throws Exception
 	{
 		logger.info("Filling Qual Form ID = " + qualFormId);
 		switch(qualFormId)
@@ -32,7 +33,7 @@ public class CCW_QualFormPage
 		return this;
 	}
 	
-	public CCW_QualFormPage _02_fillQualForm_ID_1() throws Exception
+	public QualFormPage _02_fillQualForm_ID_1() throws Exception
 	{
 		basic.typeText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -48,7 +49,7 @@ public class CCW_QualFormPage
 		return this;
 	}
 	
-	public CCW_QualFormPage _03_fillQualForm_ID_3() throws Exception
+	public QualFormPage _03_fillQualForm_ID_3() throws Exception
 	{
 		basic.typeText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -62,7 +63,7 @@ public class CCW_QualFormPage
 		return this;
 	}
 	
-	public CCW_QualFormPage _04_fillQualForm_ID_5() throws Exception
+	public QualFormPage _04_fillQualForm_ID_5() throws Exception
 	{
 		basic.typeText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -78,7 +79,7 @@ public class CCW_QualFormPage
 		return this;
 	}
 	
-	public CCW_QualFormPage _05_fillQualForm_ID_7() throws Exception
+	public QualFormPage _05_fillQualForm_ID_7() throws Exception
 	{
 		basic.typeText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -94,7 +95,7 @@ public class CCW_QualFormPage
 		return this;
 	} 
 	
-	public CCW_QualFormPage _06_fillQualForm_ID_9() throws Exception
+	public QualFormPage _06_fillQualForm_ID_9() throws Exception
 	{
 		basic.typeText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -110,7 +111,7 @@ public class CCW_QualFormPage
 		return this;
 	} 
 	
-	public CCW_QualFormPage _07_fillQualForm_ID_11() throws Exception
+	public QualFormPage _07_fillQualForm_ID_11() throws Exception
 	{
 		basic.clearUpdateText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -130,7 +131,7 @@ public class CCW_QualFormPage
 		return this;
 	}
 	
-	public CCW_QualFormPage _08_fillQualForm_ID_12() throws Exception
+	public QualFormPage _08_fillQualForm_ID_12() throws Exception
 	{
 		basic.clearUpdateText(ObjectRepository.value_93, "6");
 		basic.click(ObjectRepository.value_94);
@@ -151,11 +152,11 @@ public class CCW_QualFormPage
 		return this;
 	}
 	
-	public SFDC_NSReviewAndSubmitPage _09_saveAndContinueFromQualForm() throws Exception
+	public NSReviewAndSubmitPage _09_saveAndContinueFromQualForm() throws Exception
 	{
 		basic.click(ObjectRepository.value_107);
 		logger.info("Clicked on Save and Continue on Qual Form after filling all fields");
-		return new SFDC_NSReviewAndSubmitPage(basic);
+		return new NSReviewAndSubmitPage(basic);
 	}
 
 }

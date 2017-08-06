@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.CCW;
 
 import org.apache.log4j.Logger;
 
@@ -6,23 +6,23 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class CCW_TradeInItemsPage 
+public class TradeInItemsPage 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public CCW_TradeInItemsPage(BasicUtils basic)
+	public TradeInItemsPage(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public CCW_TradeInItemsPage _01_addDefaultTradeInItems() throws Exception
+	public TradeInItemsPage _01_addDefaultTradeInItems() throws Exception
 	{
 		_02_addSpecificTradeInItems("Cisco");
 		return this;
 	}	
 	
-	public CCW_TradeInItemsPage _02_addSpecificTradeInItems(String tradeInItem) throws Exception
+	public TradeInItemsPage _02_addSpecificTradeInItems(String tradeInItem) throws Exception
 	{
 		basic.click(ObjectRepository.value_74);
 		basic.click(ObjectRepository.value_75);
@@ -38,10 +38,10 @@ public class CCW_TradeInItemsPage
 		return this;
 	}
 	
-	public CCW_DiscountsAndCreditsPage _03_saveAndContinueFromTradeInItemsPage() throws Exception
+	public DiscountsAndCreditsPage _03_saveAndContinueFromTradeInItemsPage() throws Exception
 	{
 		basic.click(ObjectRepository.value_80);
-		return new CCW_DiscountsAndCreditsPage(basic);
+		return new DiscountsAndCreditsPage(basic);
 	}
 
 }

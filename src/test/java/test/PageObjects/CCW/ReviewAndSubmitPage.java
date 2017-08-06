@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.CCW;
 
 import org.apache.log4j.Logger;
 
@@ -6,17 +6,17 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class CCW_ReviewAndSubmitPage 
+public class ReviewAndSubmitPage 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public CCW_ReviewAndSubmitPage(BasicUtils basic)
+	public ReviewAndSubmitPage(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	private CCW_ReviewAndSubmitPage selectReasonDropdownIfAppears() throws Exception
+	private ReviewAndSubmitPage selectReasonDropdownIfAppears() throws Exception
 	{
 		if(basic.knowIfAppears(ObjectRepository.value_124))
 		{
@@ -40,7 +40,7 @@ public class CCW_ReviewAndSubmitPage
 	}
 	
 	
-	private CCW_ReviewAndSubmitPage verifyAmAndForecastingPositionPresent() throws Exception
+	private ReviewAndSubmitPage verifyAmAndForecastingPositionPresent() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.notNullAmValue_rnsPage))
 		{
@@ -56,7 +56,7 @@ public class CCW_ReviewAndSubmitPage
 		return this;
 	}
 	
-	private CCW_ReviewAndSubmitPage changeForecastingPosition() throws Exception
+	private ReviewAndSubmitPage changeForecastingPosition() throws Exception
 	{
 		basic.click(ObjectRepository.value_241);
 		basic.waitForElementPresent(ObjectRepository.value_242);
@@ -69,13 +69,13 @@ public class CCW_ReviewAndSubmitPage
 		return this;
 	}
 	
-	public CCW_ReviewAndSubmitPage _01_selectDefaultAMCCW() throws Exception
+	public ReviewAndSubmitPage _01_selectDefaultAMCCW() throws Exception
 	{
 		_02_selectDifferentAMCCW("thaymore");
 		return this;
 	}
 	
-	public CCW_ReviewAndSubmitPage _02_selectDifferentAMCCW(String amCecId) throws Exception
+	public ReviewAndSubmitPage _02_selectDifferentAMCCW(String amCecId) throws Exception
 	{
 		basic.click(ObjectRepository.value_248);
 		basic.click(ObjectRepository.value_249);
@@ -86,16 +86,16 @@ public class CCW_ReviewAndSubmitPage
 		return this;
 	}	
 	
-	public CCW_NSQuotesOverviewPage _03_finishAndSaveFromRnSTab() throws Exception
+	public NSQuotesOverviewPage _03_finishAndSaveFromRnSTab() throws Exception
 	{
 		selectReasonDropdownIfAppears();
 		verifyAmAndForecastingPositionPresent();
 		basic.click(ObjectRepository.finishAndSave_rns_page);
 		logger.info("Clicked on Finish and Save on Review and Submit tab");
-		return new CCW_NSQuotesOverviewPage(basic);
+		return new NSQuotesOverviewPage(basic);
 	}
 	
-	public CCW_ReviewAndSubmitPage _04_submitQuoteForApprovalFromRnSTab() throws Exception
+	public ReviewAndSubmitPage _04_submitQuoteForApprovalFromRnSTab() throws Exception
 	{
 		selectReasonDropdownIfAppears();	
 		verifyAmAndForecastingPositionPresent();

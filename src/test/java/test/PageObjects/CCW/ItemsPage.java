@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.CCW;
 
 import org.apache.log4j.Logger;
 
@@ -7,17 +7,17 @@ import test.BasicUtils.Constants;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class CCW_ItemsPage 
+public class ItemsPage 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public CCW_ItemsPage(BasicUtils basic)
+	public ItemsPage(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public CCW_ItemsPage _01_quotingSetPreferences() throws Exception
+	public ItemsPage _01_quotingSetPreferences() throws Exception
 	{
 		logger.info("Setting Quoting Preferences");
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
@@ -33,31 +33,31 @@ public class CCW_ItemsPage
 		return this;
 	}
 	
-	public CCW_ItemsPage _02_addDefaultProduct() throws Exception
+	public ItemsPage _02_addDefaultProduct() throws Exception
 	{
 		_05_addDefaultProduct(Constants.defaultProductQty);
 		return this;
 	}
 	
-	public CCW_ItemsPage _03_addDefaultService() throws Exception
+	public ItemsPage _03_addDefaultService() throws Exception
 	{
 		_06_addDefaultService(Constants.defaultServiceQty);
 		return this;
 	}
 	
-	public CCW_ItemsPage _04_addDefaultSubscription() throws Exception
+	public ItemsPage _04_addDefaultSubscription() throws Exception
 	{
 		_09_addSpecificSubscriptionWithQty(Constants.defaultSubscription, 1);
 		return this;
 	}
 	
-	public CCW_ItemsPage _05_addDefaultProduct(int qty) throws Exception
+	public ItemsPage _05_addDefaultProduct(int qty) throws Exception
 	{
 		_07_addSpecificProductWithQty(Constants.defaultProduct, qty);
 		return this;
 	}
 	
-	public CCW_ItemsPage _06_addDefaultService(int qty) throws Exception
+	public ItemsPage _06_addDefaultService(int qty) throws Exception
 	{
 		_08_addSpecificServiceWithQty(Constants.defaultService, qty);
 		if(basic.knowIfAppears(ObjectRepository.service_duration_tb))
@@ -68,7 +68,7 @@ public class CCW_ItemsPage
 		return this;
 	}
 	
-	public CCW_ItemsPage _07_addSpecificProductWithQty(String product, int qty) throws Exception
+	public ItemsPage _07_addSpecificProductWithQty(String product, int qty) throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
 		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, product);
@@ -80,7 +80,7 @@ public class CCW_ItemsPage
 		return this;
 	}
 	
-	public CCW_ItemsPage _08_addSpecificServiceWithQty(String service, int qty) throws Exception
+	public ItemsPage _08_addSpecificServiceWithQty(String service, int qty) throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
 		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, service);
@@ -92,7 +92,7 @@ public class CCW_ItemsPage
 		return this;
 	}
 	
-	public CCW_ItemsPage _09_addSpecificSubscriptionWithQty(String subscription, int qty) throws Exception
+	public ItemsPage _09_addSpecificSubscriptionWithQty(String subscription, int qty) throws Exception
 	{
 		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, subscription);
 		basic.click(ObjectRepository.sfdc_skuQty_tb);
@@ -120,7 +120,7 @@ public class CCW_ItemsPage
 		return this;
 	}
 	
-	public CCW_ItemsPage _10_addDefaultOnPremSku() throws Exception
+	public ItemsPage _10_addDefaultOnPremSku() throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
 		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, Constants.defaultOnPremSku);
@@ -142,16 +142,16 @@ public class CCW_ItemsPage
 		return this;
 	}
 	
-	public CCW_TradeInItemsPage _11_addTradeInItems() throws Exception
+	public TradeInItemsPage _11_addTradeInItems() throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
 		basic.click(ObjectRepository.value_71);
 		basic.click(ObjectRepository.value_72);
 		basic.click(ObjectRepository.value_73);
-		return new CCW_TradeInItemsPage(basic);		
+		return new TradeInItemsPage(basic);		
 	}
 	
-	public CCW_DiscountsAndCreditsPage _12_saveAndContinueFromItemsTab() throws Exception
+	public DiscountsAndCreditsPage _12_saveAndContinueFromItemsTab() throws Exception
 	{
 		basic.click(ObjectRepository.saveAndCont_itemsTab_button);
 		basic.pause(2000);
@@ -173,7 +173,7 @@ public class CCW_ItemsPage
 			}
 		}
 		logger.info("Clicked on Save and Continue on Items tab");
-		return new CCW_DiscountsAndCreditsPage(basic);
+		return new DiscountsAndCreditsPage(basic);
 	}
 	
 	

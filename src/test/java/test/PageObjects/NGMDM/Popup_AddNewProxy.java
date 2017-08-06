@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.NGMDM;
 
 import org.apache.log4j.Logger;
 
@@ -6,35 +6,35 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class NGMDM_Popup_AddNewProxy 
+public class Popup_AddNewProxy 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public NGMDM_Popup_AddNewProxy(BasicUtils basic)
+	public Popup_AddNewProxy(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public NGMDM_Popup_AddNewProxy _01_selectTheater(String theater) throws Exception
+	public Popup_AddNewProxy _01_selectTheater(String theater) throws Exception
 	{
 		basic.selectOption(ObjectRepository.value_383, theater);
 		return this;
 	}
 	
-	public NGMDM_Popup_AddNewProxy _02_selectRole(String role) throws Exception
+	public Popup_AddNewProxy _02_selectRole(String role) throws Exception
 	{
 		basic.selectOption(ObjectRepository.value_384, role);
 		return this;
 	}
 	
-	public NGMDM_Popup_AddNewProxy _03_enterProxyName(String proxyName) throws Exception
+	public Popup_AddNewProxy _03_enterProxyName(String proxyName) throws Exception
 	{
 		basic.typeTextAutopopulate(ObjectRepository.value_385, proxyName);
 		return this;
 	}
 	
-	public NGMDM_Popup_AddNewProxy _04_makeEndDateAsTodaysDate() throws Exception
+	public Popup_AddNewProxy _04_makeEndDateAsTodaysDate() throws Exception
 	{
 		basic.click(ObjectRepository.value_392);
 		basic.pause(1000);
@@ -50,16 +50,16 @@ public class NGMDM_Popup_AddNewProxy
 		return this;
 	}
 	
-	public NGMDM_Popup_ExistingProxy _05_clickAddNewProxy() throws Exception
+	public Popup_ExistingProxy _05_clickAddNewProxy() throws Exception
 	{
 		basic.click(ObjectRepository.value_387);
-		return new NGMDM_Popup_ExistingProxy(basic);
+		return new Popup_ExistingProxy(basic);
 	}
 	
-	public NGMDM_Page_MyDealsHomepage _06_clickCancel() throws Exception
+	public Page_MyDealsHomepage _06_clickCancel() throws Exception
 	{
 		basic.click(ObjectRepository.value_389);
-		return new NGMDM_Page_MyDealsHomepage(basic);
+		return new Page_MyDealsHomepage(basic);
 	}
 	
 	

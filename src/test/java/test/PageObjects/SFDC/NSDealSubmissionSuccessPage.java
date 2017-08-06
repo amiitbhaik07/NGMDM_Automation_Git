@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.SFDC;
 
 import org.apache.log4j.Logger;
 
@@ -6,17 +6,17 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class SFDC_NSDealSubmissionSuccessPage 
+public class NSDealSubmissionSuccessPage 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public SFDC_NSDealSubmissionSuccessPage(BasicUtils basic)
+	public NSDealSubmissionSuccessPage(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public SFDC_NSDealSubmissionSuccessPage _01_AssertDealSuccessPage() throws Exception
+	public NSDealSubmissionSuccessPage _01_AssertDealSuccessPage() throws Exception
 	{
 		basic.validateIfPresent(ObjectRepository.value_131);
 		basic.validateIfPresent(ObjectRepository.value_132);

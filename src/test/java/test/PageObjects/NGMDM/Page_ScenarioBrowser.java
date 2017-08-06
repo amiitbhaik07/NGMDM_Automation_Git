@@ -1,18 +1,23 @@
-package test.PageObjects;
+package test.PageObjects.NGMDM;
 
 import org.apache.log4j.Logger;
 
 import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 
-public class NGMDM_Popup_ExecutiveSummary 
+public class Page_ScenarioBrowser extends Pane_LeftBarAndOrderHeader
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public NGMDM_Popup_ExecutiveSummary(BasicUtils basic)
+	public Page_ScenarioBrowser(BasicUtils basic)
 	{
+		super(basic);
 		this.basic = basic;
-	}	
+	}
+	
+	
+	
+	
 
 }
