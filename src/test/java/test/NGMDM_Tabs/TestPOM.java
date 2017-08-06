@@ -9,7 +9,20 @@ import test.PageObjects.LoginPage;
 
 public class TestPOM 
 {
+	
 	@Test
+	public void test() throws Exception
+	{
+		WebDriver driver = LaunchBrowsers.launchBrowser();
+		BasicUtils basic = new BasicUtils(driver);
+		
+		new LoginPage(basic)
+					._03_ngmdmLogin("duabhish")
+					._02_regularSearchDealID("")
+					;
+	}
+	
+	/*@Test
 	public void test() throws Exception
 	{
 		WebDriver driver = LaunchBrowsers.launchBrowser();
@@ -71,6 +84,6 @@ public class TestPOM
 					;
 					;
 		
-	}
+	}*/
 
 }

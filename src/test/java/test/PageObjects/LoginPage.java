@@ -42,7 +42,7 @@ public class LoginPage
 		return _01_sfdcLogin(Constants.defaultSfdcAm_EMEAR, "cisco123");
 	}
 	
-	public NGMDM_MyDealsHomepage _03_ngmdmLogin(String userName) throws Exception
+	public NGMDM_Page_MyDealsHomepage _03_ngmdmLogin(String userName) throws Exception
 	{
 		basic.clearBrowserCache();
 		basic.justNavigate(ObjectRepository.mdmProxy_Url);
@@ -51,7 +51,7 @@ public class LoginPage
 		basic.click(ObjectRepository.login_button);
 		basic.typeText(ObjectRepository.proxyId_tb, userName);
 		basic.click(ObjectRepository.proxyIdSubmit_button);
-		return new NGMDM_MyDealsHomepage(basic);
+		return new NGMDM_Page_MyDealsHomepage(basic);
 	}
 	
 	

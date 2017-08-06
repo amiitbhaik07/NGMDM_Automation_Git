@@ -6,35 +6,35 @@ import test.BasicUtils.BasicUtils;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
 
-public class NGMDM_AddNewProxyPage 
+public class NGMDM_Popup_AddNewProxy 
 {
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
-	public NGMDM_AddNewProxyPage(BasicUtils basic)
+	public NGMDM_Popup_AddNewProxy(BasicUtils basic)
 	{
 		this.basic = basic;
 	}
 	
-	public NGMDM_AddNewProxyPage _01_selectTheater(String theater) throws Exception
+	public NGMDM_Popup_AddNewProxy _01_selectTheater(String theater) throws Exception
 	{
 		basic.selectOption(ObjectRepository.value_383, theater);
 		return this;
 	}
 	
-	public NGMDM_AddNewProxyPage _02_selectRole(String role) throws Exception
+	public NGMDM_Popup_AddNewProxy _02_selectRole(String role) throws Exception
 	{
 		basic.selectOption(ObjectRepository.value_384, role);
 		return this;
 	}
 	
-	public NGMDM_AddNewProxyPage _03_enterProxyName(String proxyName) throws Exception
+	public NGMDM_Popup_AddNewProxy _03_enterProxyName(String proxyName) throws Exception
 	{
 		basic.typeTextAutopopulate(ObjectRepository.value_385, proxyName);
 		return this;
 	}
 	
-	public NGMDM_AddNewProxyPage _04_makeEndDateAsTodaysDate() throws Exception
+	public NGMDM_Popup_AddNewProxy _04_makeEndDateAsTodaysDate() throws Exception
 	{
 		basic.click(ObjectRepository.value_392);
 		basic.pause(1000);
@@ -50,16 +50,16 @@ public class NGMDM_AddNewProxyPage
 		return this;
 	}
 	
-	public NGMDM_ExistingProxyPage _05_clickAddNewProxy() throws Exception
+	public NGMDM_Popup_ExistingProxy _05_clickAddNewProxy() throws Exception
 	{
 		basic.click(ObjectRepository.value_387);
-		return new NGMDM_ExistingProxyPage(basic);
+		return new NGMDM_Popup_ExistingProxy(basic);
 	}
 	
-	public NGMDM_MyDealsHomepage _06_clickCancel() throws Exception
+	public NGMDM_Page_MyDealsHomepage _06_clickCancel() throws Exception
 	{
 		basic.click(ObjectRepository.value_389);
-		return new NGMDM_MyDealsHomepage(basic);
+		return new NGMDM_Page_MyDealsHomepage(basic);
 	}
 	
 	
