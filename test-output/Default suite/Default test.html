@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 05 16:48:06 IST 2017</td>
+<td>Started on:</td><td>Sun Aug 06 15:05:53 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>238 seconds (238099 ms)</td>
+<tr><td>Total time:</td><td>421 seconds (421105 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.NGMDM_Tabs._05_DealQualification.qfId1()'><b>qfId1</b><br>Test class: test.NGMDM_Tabs._05_DealQualification</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Global Price List in US Dollars
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;ABHAIK-WS01&apos;, ip: &apos;10.65.244.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at test.BasicUtils.BasicUtils.selectOption(BasicUtils.java:1116)
-	at test.PageObjects.SFDC_CreateQuotePage._05_selectSpecificPriceList(SFDC_CreateQuotePage.java:80)
-	at test.PageObjects.SFDC_CreateQuotePage._02_selectDefaultPriceList(SFDC_CreateQuotePage.java:63)
-	at test.PageObjects.SFDC_CreateQuotePage._00_proceedWithDefaultValues(SFDC_CreateQuotePage.java:22)
-	at test.NGMDM_Tabs._05_DealQualification.qfId1(_05_DealQualification.java:56)
+<td title='test.NGMDM_Tabs.TestPOM.test()'><b>test</b><br>Test class: test.NGMDM_Tabs.TestPOM</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@kdfid=&apos;utiFV&apos; and @kdfapp=&apos;mdmUI&apos; and @kdfpage=&apos;ngDealPricing&apos;] (tried for 200 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at test.BasicUtils.BasicUtils.waitForElementPresence(BasicUtils.java:70)
+	at test.BasicUtils.BasicUtils.isWebElementInViewPort(BasicUtils.java:148)
+	at test.BasicUtils.BasicUtils.click(BasicUtils.java:467)
+	at test.PageObjects.NGMDM.Page_DealPricing._01_openFvAssessment(Page_DealPricing.java:23)
+	at test.NGMDM_Tabs.TestPOM.test(TestPOM.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,18 +108,28 @@ Driver info: driver.version: unknown
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace900298796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace900298796'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Global Price List in US Dollars
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@kdfid=&apos;utiFV&apos; and @kdfapp=&apos;mdmUI&apos; and @kdfpage=&apos;ngDealPricing&apos;]
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;ABHAIK-WS01&apos;, ip: &apos;10.65.244.87&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+System info: host: &apos;ABHAIK-WS01&apos;, ip: &apos;10.65.244.110&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
 Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at test.BasicUtils.BasicUtils.selectOption(BasicUtils.java:1116)
-	at test.PageObjects.SFDC_CreateQuotePage._05_selectSpecificPriceList(SFDC_CreateQuotePage.java:80)
-	at test.PageObjects.SFDC_CreateQuotePage._02_selectDefaultPriceList(SFDC_CreateQuotePage.java:63)
-	at test.PageObjects.SFDC_CreateQuotePage._00_proceedWithDefaultValues(SFDC_CreateQuotePage.java:22)
-	at test.NGMDM_Tabs._05_DealQualification.qfId1(_05_DealQualification.java:56)
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace2123533871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2123533871'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@kdfid=&apos;utiFV&apos; and @kdfapp=&apos;mdmUI&apos; and @kdfpage=&apos;ngDealPricing&apos;] (tried for 200 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at test.BasicUtils.BasicUtils.waitForElementPresence(BasicUtils.java:70)
+	at test.BasicUtils.BasicUtils.isWebElementInViewPort(BasicUtils.java:148)
+	at test.BasicUtils.BasicUtils.click(BasicUtils.java:467)
+	at test.PageObjects.NGMDM.Page_DealPricing._01_openFvAssessment(Page_DealPricing.java:23)
+	at test.NGMDM_Tabs.TestPOM.test(TestPOM.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,9 +154,22 @@ Driver info: driver.version: unknown
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //*[@kdfid=&apos;utiFV&apos; and @kdfapp=&apos;mdmUI&apos; and @kdfpage=&apos;ngDealPricing&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;ABHAIK-WS01&apos;, ip: &apos;10.65.244.110&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_60&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	... 29 more
 </pre></div></td>
-<td>238</td>
-<td>test.NGMDM_Tabs._05_DealQualification@59fa1d9b</td></tr>
+<td>421</td>
+<td>test.NGMDM_Tabs.TestPOM@59fa1d9b</td></tr>
 </table><p>
 </body>
 </html>

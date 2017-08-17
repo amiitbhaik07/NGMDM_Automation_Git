@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import test.BasicUtils.BasicUtils;
 import test.BasicUtils.LaunchBrowsers;
 import test.BasicUtils.Modules;
-import test.PageObjects.LoginPage;
+import test.PageObjects.Login.LoginPage;
 
 public class _05_DealQualification
 {	

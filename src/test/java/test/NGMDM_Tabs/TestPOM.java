@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import test.BasicUtils.BasicUtils;
 import test.BasicUtils.LaunchBrowsers;
-import test.PageObjects.LoginPage;
+import test.PageObjects.Login.LoginPage;
 
 public class TestPOM 
 {
@@ -17,9 +17,26 @@ public class TestPOM
 		BasicUtils basic = new BasicUtils(driver);
 		
 		new LoginPage(basic)
-					._03_ngmdmLogin("duabhish")
-					._02_regularSearchDealID("")
-					;
+							._03_ngmdmLogin("duabhish")
+							._00_0_02_regularSearchDealID("61004680")
+							._01_openFirstDealDisplayed()
+							._00_1_05_openDealSummary()
+							._03_addApprover()
+							._00_addApproverAndContinueDefault("mbanchi")
+							._06_validateApproverPresent("mbanchi")
+							._08_deleteLineForApprover("mbanchi")
+							._00_1_01_openDealPricing()
+							._06_cloneScenario()
+							._00_cloneAndProceedDefault("testClone")
+							._03_deleteScenario("testClone")
+							._01_openFirstPublishedScenario()
+							._01_openFvAssessment()
+							._01_clickCancelButton()
+							._02_openFvDetails()
+							._01_clickCancelButton()
+							._00_0_04_openAddNewProxy()
+							._01_addNewProxy()				
+							;
 	}
 	
 	/*@Test

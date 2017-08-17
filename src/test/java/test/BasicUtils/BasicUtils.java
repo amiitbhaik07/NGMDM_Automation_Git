@@ -479,7 +479,7 @@ public class BasicUtils
 				waitForPreloaderDisappear();
 				break;
 			}
-			catch(WebDriverException e){
+			catch(Exception e){
 				logger.warn("Error in Try number "+(i+1)+" Clicking on Element : XPath = " + xpath);
 				switch(i)
 				{

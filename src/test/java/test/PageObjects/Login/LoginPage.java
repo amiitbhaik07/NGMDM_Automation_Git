@@ -1,4 +1,4 @@
-package test.PageObjects;
+package test.PageObjects.Login;
 
 import org.apache.log4j.Logger;
 import test.BasicUtils.BasicUtils;

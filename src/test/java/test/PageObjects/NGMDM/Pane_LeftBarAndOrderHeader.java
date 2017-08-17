@@ -17,67 +17,67 @@ public class Pane_LeftBarAndOrderHeader extends Pane_MyDealsTop
 		this.basic = basic;
 	}	
 	
-	public Pane_LeftBarAndOrderHeader _01_openDealPricing() throws Exception
+	public Page_DealPricing _00_1_01_openDealPricing() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_26))
 		{
 			basic.click(ObjectRepository.slideMenu);
 		}
 		basic.click(ObjectRepository.value_26);
-		return this;
+		return new Page_DealPricing(basic);
 	}
 	
-	public Pane_LeftBarAndOrderHeader _02_openScenarioBrowser() throws Exception
+	public Page_ScenarioBrowser _00_1_02_openScenarioBrowser() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_281))
 		{
 			basic.click(ObjectRepository.slideMenu);
 		}
 		basic.click(ObjectRepository.value_281);
-		return this;
+		return new Page_ScenarioBrowser(basic);
 	}
 	
-	public Pane_LeftBarAndOrderHeader _03_createNewScenario() throws Exception
+	public Page_CreateNewScenario _00_1_03_createNewScenario() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.createNewScenario))
 		{
 			basic.click(ObjectRepository.slideMenu);
 		}
 		basic.click(ObjectRepository.createNewScenario);
-		return this;
+		return new Page_CreateNewScenario(basic);
 	}
 	
-	public Pane_LeftBarAndOrderHeader _04_openQualification() throws Exception
+	public Page_Qualification _00_1_04_openQualification() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_140))
 		{
 			basic.click(ObjectRepository.slideMenu);
 		}
 		basic.click(ObjectRepository.value_140);
-		return this;
+		return new Page_Qualification(basic);
 	}
 	
-	public Pane_LeftBarAndOrderHeader _05_openDealSummary() throws Exception
+	public Page_DealSummary _00_1_05_openDealSummary() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.value_255))
 		{
 			basic.click(ObjectRepository.slideMenu);
 		}
 		basic.click(ObjectRepository.value_255);
-		return this;
+		return new Page_DealSummary(basic);
 	}
 	
-	public Pane_LeftBarAndOrderHeader _06_openAuditHistory() throws Exception
+	public Page_AuditHistory _00_1_06_openAuditHistory() throws Exception
 	{
 		if(! basic.knowIfAppears(ObjectRepository.auditHistoryTab))
 		{
 			basic.click(ObjectRepository.slideMenu);
 		}
 		basic.click(ObjectRepository.auditHistoryTab);
-		return this;
+		return new Page_AuditHistory(basic);
 	}
 	
-	public Pane_LeftBarAndOrderHeader _07_showDetailsHeader() throws Exception
+	public Pane_LeftBarAndOrderHeader _00_1_07_showDetailsHeader() throws Exception
 	{
 		basic.click(ObjectRepository.dealHeadershowdetails);
 		return this;

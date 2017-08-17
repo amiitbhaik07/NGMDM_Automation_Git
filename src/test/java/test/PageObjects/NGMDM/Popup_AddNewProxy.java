@@ -11,6 +11,7 @@ public class Popup_AddNewProxy
 	BasicUtils basic;
 	private static Logger logger = Logger.getLogger(Modules.class);
 	
+	
 	public Popup_AddNewProxy(BasicUtils basic)
 	{
 		this.basic = basic;
