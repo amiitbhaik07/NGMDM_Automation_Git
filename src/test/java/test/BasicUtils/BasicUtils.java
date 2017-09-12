@@ -583,13 +583,11 @@ public class BasicUtils
 		logger.debug("Successfully Switched back to Parent Window");
 	}
 	
-	public void switchToIframe(String xpath) throws Exception
+	public void switchToIframe(String iFrameXpath) throws Exception
 	{
-		logger.debug("Switching to IFrame : XPath = " + xpath);
-		waitForElementPresence(xpath);
-		waitForElementVisible(xpath);
-		driver.switchTo().frame(driver.findElement(By.xpath(xpath)));
-		logger.debug("Successfully Switched to IFrame : XPath = " + xpath);
+		logger.debug("Switching to IFrame : XPath = " + iFrameXpath);
+		driver.switchTo().frame(getWebElement(iFrameXpath));
+		logger.debug("Successfully Switched to IFrame : XPath = " + iFrameXpath);
 	}
 	
 	public void switchToIframe_id(String id) throws Exception
@@ -1224,5 +1222,19 @@ public class BasicUtils
 		}
 		catch(Exception e){}
 		return false;
+	}
+	
+	public WebElement getWebElement(String xpath) throws Exception
+	{
+		waitForElementPresence(xpath);
+		waitForElementVisible(xpath);
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public String getAttribute(String xpath, String attributeName) throws Exception
+	{
+		WebElement element = getWebElement(xpath);
+		String attribute = element.getAttribute(attributeName);
+		return attribute;
 	}
 }

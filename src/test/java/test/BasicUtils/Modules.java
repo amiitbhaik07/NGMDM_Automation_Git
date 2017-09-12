@@ -495,6 +495,13 @@ public class Modules
 		logger.info("Clicked on Save and Continue on Review and Submit tab");
 	}
 	
+	public void submitQuoteForApprovalFromRnSTab() throws Exception
+	{
+		selectReasonDropdownIfAppears();
+		basic.click(ObjectRepository.submitQuoteForApproval_rns_page);
+		logger.info("Clicked on Submit Quote for Approval on Review and Submit tab");
+	}
+	
 	public void continueToQualForm() throws Exception
 	{
 		basic.click(ObjectRepository.value_90);
@@ -590,7 +597,7 @@ public class Modules
 		saveAndContinueFromDiscountsTab();
 		String dealId = getDealIDFromCCW();
 		System.out.println(dealId);
-		saveAndContinueFromRnSTab();	
+		submitQuoteForApprovalFromRnSTab();	
 		viewSubmittedQuote_CCW();
 		
 		//Fetch AM
@@ -1233,7 +1240,7 @@ public class Modules
 	
 	public void reopenDealCCW() throws Exception
 	{
-		basic.click(ObjectRepository.finishAndSave_rns_page);
+		basic.click(ObjectRepository.reopenDeal_rns_page);
 		basic.click(ObjectRepository.value_240);
 	}
 	
@@ -1271,6 +1278,10 @@ public class Modules
 		
 	public void ngmdmLogin(String userName) throws Exception
 	{
+		//Thread t1 = new Thread();		
+		//Runnable t2 = new Runnable();		
+		//WebDriver driver = new FirefoxDriver();
+		
 		basic.clearBrowserCache();
 		basic.justNavigate(ObjectRepository.mdmProxy_Url);
 		//basic.pause(8000);

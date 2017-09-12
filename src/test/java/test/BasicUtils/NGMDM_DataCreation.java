@@ -270,18 +270,33 @@ public class NGMDM_DataCreation
 	
 	
 	
-	
-	
-	
-	
-	
 	@Test
+	public void test2() throws Exception
+	{
+		System.out.println("_______________ createDealType5_Product_Service_USD");
+		WebDriver driver = LaunchBrowsers.launchBrowser();
+		Modules m = new Modules(driver);
+		String str = m.createDealType5_Product_Service_CAD();
+		//String str = m.createDealType5_Product_Service_USD();
+		//m.quitDriver();
+		insertIntoDb(str);
+		System.out.println("Success");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/*@Test
 	public void qfId1() throws Exception
 	{
 		System.out.println("First Change");
 		System.out.println("Second Change");
 		System.out.println("_______________qfId1");
-		WebDriver driver = browsers.launchBrowser();
+		WebDriver driver = LaunchBrowsers.launchBrowser();
 		Modules m = new Modules(driver);
 		m.sfdcCreateOpportunityWithThaymore("QF_Form_ID_1");
 		m.sfdcFillCreateQuotePage(false);
@@ -300,7 +315,7 @@ public class NGMDM_DataCreation
 		m.sfdcAssert_DT2_SubmissionPage();
 		
 		System.out.println("Success : " + dealID);
-	}
+	}*/
 	
 	
 	
@@ -322,18 +337,7 @@ public class NGMDM_DataCreation
 	
 	
 	
-	/*@Test
-	public void test2() throws Exception
-	{
-		System.out.println("_______________ createDealType5_Product_Service_USD");
-		WebDriver driver = browsers.launchBrowser(browserName);
-		Modules m = new Modules(driver);
-		//String str = m.createDealType5_Product_Service_CAD();
-		String str = m.createDealType5_Product_Service_USD();
-		//m.quitDriver();
-		insertIntoDb(str);
-		System.out.println("Success");
-	}*/
+	
 	
 	/*@Test
 	public void test3() throws Exception

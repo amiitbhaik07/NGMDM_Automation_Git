@@ -102,7 +102,7 @@ public class LaunchBrowsers
 		if(runOnGrid)
 		{
 			//Grid Execution
-			return launchBrowser(defaultBrowserName, "50", Platform.WINDOWS);
+			return launchBrowser(defaultBrowserName, 50, 2);
 		}
 		else
 		{
@@ -161,24 +161,28 @@ public class LaunchBrowsers
 			throw new Exception("Browser Name '"+browserName.trim()+"' not defined in System");
 		}
 		
-		Reporter.getCurrentTestResult().setAttribute("driver", driver);
+		try
+		{
+			Reporter.getCurrentTestResult().setAttribute("driver", driver);
+		}
+		catch(Exception e){}
+		
 		return driver;
 	}
 	
 	
-	public static WebDriver launchBrowser(String browserName, String version, Platform platform) throws Exception 
+	public static WebDriver launchBrowser(String browserName, int version, int platform) throws Exception 
 	{
 		loadPropertyFile();
 		DesiredCapabilities cap;
 		WebDriver driver = null;
-		
 		if(browserName.trim().equalsIgnoreCase("phantomjs"))
 		{
 			cap=DesiredCapabilities.phantomjs();
 			//cap.setVersion(version);
-			cap.setPlatform(platform);
+			cap.setPlatform(getPlatform(platform));
 			cap.setBrowserName(browserName.trim());
-			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
+			cap.setCapability(CapabilityType.BROWSER_VERSION, (version+"").trim());
 			logger.info("Launching Phantomjs Grid browser");
 			driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
@@ -187,9 +191,9 @@ public class LaunchBrowsers
 		{
 			cap=DesiredCapabilities.htmlUnit();
 			//cap.setVersion(version);
-			cap.setPlatform(platform);
+			cap.setPlatform(getPlatform(platform));
 			cap.setBrowserName(browserName.trim());
-			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
+			cap.setCapability(CapabilityType.BROWSER_VERSION, (version+"").trim());
 			logger.info("Launching Phantomjs Grid browser");
 			driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
@@ -198,21 +202,20 @@ public class LaunchBrowsers
 		{
 			cap=DesiredCapabilities.firefox();
 			//cap.setVersion(version);
-			cap.setPlatform(platform);
+			cap.setPlatform(getPlatform(platform));
 			cap.setBrowserName(browserName.trim());
-			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
+			cap.setCapability(CapabilityType.BROWSER_VERSION, (version+"").trim());
 			logger.info("Launching Firefox Grid browser");
 			driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
-			Reporter.getCurrentTestResult().setAttribute("driver", driver);
 		}
 		else if(browserName.trim().equalsIgnoreCase("chrome"))
 		{
 			cap=DesiredCapabilities.chrome();
 			//cap.setVersion(version);
-			cap.setPlatform(platform);
+			cap.setPlatform(getPlatform(platform));
 			cap.setBrowserName(browserName.trim());
-			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
+			cap.setCapability(CapabilityType.BROWSER_VERSION, (version+"").trim());
 			logger.info("Launching Chrome Grid browser");
 			driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
@@ -221,9 +224,9 @@ public class LaunchBrowsers
 		{
 			cap=DesiredCapabilities.internetExplorer();
 			//cap.setVersion(version);
-			cap.setPlatform(platform);
+			cap.setPlatform(getPlatform(platform));
 			cap.setBrowserName(browserName.trim());
-			cap.setCapability(CapabilityType.BROWSER_VERSION, version.trim());
+			cap.setCapability(CapabilityType.BROWSER_VERSION, (version+"").trim());
 			logger.info("Launching IE Grid browser");
 			driver = new RemoteWebDriver(new URL(hubUrl),cap);
 			driver.manage().window().maximize();
@@ -233,8 +236,24 @@ public class LaunchBrowsers
 			throw new Exception("Browser Name '"+browserName+"' not defined in System");
 		}
 		
-		Reporter.getCurrentTestResult().setAttribute("driver", driver);
+		try
+		{
+			Reporter.getCurrentTestResult().setAttribute("driver", driver);
+		}
+		catch(Exception e){}
+		
 		return driver;
+	}
+	
+	public static Platform getPlatform(int platform) throws Exception
+	{
+		switch(platform)
+		{
+		case 0: return Platform.MAC;
+		case 1: return Platform.LINUX;
+		case 2: return Platform.WINDOWS;		
+		default: return Platform.WINDOWS;
+		}
 	}
 	
 
