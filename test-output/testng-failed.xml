@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="7" name="Failed suite [Suite]" parallel="true">
+  <listeners>
+    <listener class-name="test.BasicUtils.TestListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="true">
     <classes>
-      <class name="test.BasicUtils.NGMDM_DataCreation">
+      <class name="test.NGMDM_Tabs.TestPOM">
         <methods>
-          <include name="test2"/>
-          <include name="disconnect"/>
-          <include name="dbconnection"/>
+          <include name="dbConnection"/>
+          <include name="testDeal00"/>
         </methods>
-      </class> <!-- test.BasicUtils.NGMDM_DataCreation -->
+      </class> <!-- test.NGMDM_Tabs.TestPOM -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

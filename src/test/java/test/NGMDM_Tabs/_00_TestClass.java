@@ -5,8 +5,6 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-
-import test.BasicUtils.BuildInfo;
 import test.BasicUtils.LaunchBrowsers;
 import test.BasicUtils.Modules;
 
@@ -16,7 +14,6 @@ public class _00_TestClass
 	public void test1() throws Exception
 	{
 		System.out.println("___________________________________test1");
-		System.out.println(BuildInfo.timeStamp);
 		//throw new Exception("fail1");
 	}
 	
@@ -55,7 +52,6 @@ public class _00_TestClass
 	public void test5() throws Exception
 	{
 		System.out.println("___________________________________test5");
-		System.out.println(BuildInfo.timeStamp);
 		//throw new Exception("Test Failed");
 	}
 	
@@ -63,7 +59,6 @@ public class _00_TestClass
 	public void test6() throws Exception
 	{
 		System.out.println("___________________________________test6");
-		System.out.println(BuildInfo.timeStamp);
 		//throw new Exception("Test Failed");
 	}
 	

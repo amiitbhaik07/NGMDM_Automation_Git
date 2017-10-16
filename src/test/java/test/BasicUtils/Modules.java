@@ -26,7 +26,7 @@ public class Modules
 	
 	public void quitDriver()
 	{
-		basic.quitDriver(driver);
+		basic.quitDriver();
 	}
 	
 	public void closeDriver()

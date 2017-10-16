@@ -1,16 +1,15 @@
 package test.BasicUtils;
 
 public class Constants {
-	public static final int defaultTimeoutSeconds = 200;
+	public static final int defaultTimeoutSeconds = 180;
 	public static final long ifLogicTimeoutSeconds = 30;
 	public static final int ifVisibleTimeoutSeconds = 5;
-	public static final int waitForAmAppearanceSeconds = 120;
-	
+	public static final int waitForAmAppearanceSeconds = 120;	
 	
 	public static final long notPresenceTimeoutMillis = 30000;
 	public static final int actionTryGapMillis = 5000;	
-	public static final int defaultPauseMillis = 100;
-	public static final int preLoaderDefaultPauseMillis = 100;
+	public static final int defaultPauseMillis = 75;
+	public static final int preLoaderDefaultPauseMillis = 75;
 	
 	public static final int actionTryCount = 7;
 	
@@ -21,7 +20,7 @@ public class Constants {
 	
 	public static final String defaultSfdcAm_US = "thaymore";
 	public static final String defaultSfdcAm_EMEAR = "beheard";
-	public static String sfdc_sandbox = "qtr";
+	public static String sfdc_sandbox = "reg";
 	
 	
 	//Advanced Search Dropdown Values
@@ -38,10 +37,12 @@ public class Constants {
 	//Default SKU Names
 	public static final String defaultProduct = "CISCO1921DC/K9";
 	public static final String defaultService = "CON-SNT3-LAP1252A";		//CON-SNT3-LAP1252A //CON-SNT-00000003
-	public static final String defaultSubscription = "A-WX-NAMED-USER";
+	public static final String defaultSubscription = "A-WX-NAMED-USER";		//CIP-TRN-APESS-OL= 
 	public static final String defaultOnPremSku = "A-HCS-UC-ERLY-TM"; //"A-HCS-UC-ERLY-TM";
 	public static final String defaultUcsSku = "UCS-FAN-6248UP=";
 	public static final String defaultOaSku = "CON-ECMU-C1FBC45S";
+	
+	public static final String defaultEstimate = "SK73171017YE";
 	
 	//Default SKU Quantities
 	public static final int defaultProductQty = 1;

@@ -71,7 +71,10 @@ public class ReviewAndSubmitPage
 	
 	public ReviewAndSubmitPage _01_selectDefaultAMCCW() throws Exception
 	{
-		_02_selectDifferentAMCCW("thaymore");
+		if(! basic.isElementPresent(ObjectRepository.alreadyStampedAM))
+		{
+			_02_selectDifferentAMCCW("thaymore");
+		}
 		return this;
 	}
 	

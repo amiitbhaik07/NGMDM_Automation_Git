@@ -26,6 +26,7 @@ public class TestListener implements ITestListener
 		{
 			if(LaunchBrowsers.quitBrowserOnSuccess)
         	{
+				driver = (WebDriver)result.getAttribute("driver");
 				System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Closing Browser");
         		driver.quit();
         	}
@@ -67,6 +68,7 @@ public class TestListener implements ITestListener
         {
         	if(LaunchBrowsers.quitBrowserOnFailure)
         	{
+        		driver = (WebDriver)result.getAttribute("driver");
         		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Closing Browser");
         		driver.quit();
         	}

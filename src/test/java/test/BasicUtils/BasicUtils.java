@@ -247,7 +247,7 @@ public class BasicUtils
 		catch(Exception e){}
 	}
 	
-	public void quitDriver(WebDriver driver)
+	public void quitDriver()
 	{
 		driver.quit();
 	}
@@ -358,13 +358,13 @@ public class BasicUtils
 		{
 			logger.trace("Navigating to URL = " + url);
 			driver.get(url);
-			logger.debug("Successfully Navigated to URL = " + url);
+			logger.info("Successfully Navigated to URL = " + url);
 		}
 		catch(Exception e)
 		{
 			logger.trace("Navigating to URL = " + url);
 			driver.navigate().to(url);
-			logger.debug("Successfully Navigated to URL = " + url);
+			logger.info("Successfully Navigated to URL = " + url);
 		}
 	}
 	
@@ -494,7 +494,7 @@ public class BasicUtils
 				pause(Constants.actionTryGapMillis);				
 			}
 		}
-		logger.debug("Successfully Clicked on Element : XPath = " + xpath);
+		logger.info("Successfully Clicked on Element : XPath = " + xpath);
 	}
 	
 	public void click_id(String id) throws Exception
@@ -690,7 +690,7 @@ public class BasicUtils
 		}
 		waitForElementClickable(xpath);
 		driver.findElement(By.xpath(xpath)).sendKeys(text);		
-		logger.debug("Successfully typed text '"+text+"' on XPath = "+xpath);
+		logger.info("Successfully typed text '"+text+"' on XPath = "+xpath);
 	}
 	
 	public void typeText_id(String id, String text) throws Exception
@@ -1012,7 +1012,7 @@ public class BasicUtils
 		logger.trace("Validating if Element is Present on XPath = " + xpath);
 		waitForElementPresence(xpath);
 		Assert.assertTrue(isElementPresent(xpath));
-		logger.debug("Element is successfully Present on XPath = " + xpath);
+		logger.info("Element is successfully Present on XPath = " + xpath);
 	}
 	
 	public void validateIfPresent_id(String id) throws Exception
@@ -1117,7 +1117,7 @@ public class BasicUtils
 			scrollIntoView(xpath);
 		}
 		new Select(driver.findElement(By.xpath(xpath))).selectByVisibleText(visibleText);
-		logger.debug("Successfully Selected Option value '"+visibleText+"' on XPath = " + xpath);
+		logger.info("Successfully Selected Option value '"+visibleText+"' on XPath = " + xpath);
 	}
 	
 	public void selectOptionWhereValueLike(String xpath, String partOfVisibleText) throws Exception

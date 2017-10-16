@@ -151,6 +151,25 @@ public class ItemsPage
 		return new TradeInItemsPage(basic);		
 	}
 	
+	
+	public ItemsPage _12_ImportDefaultEstimate() throws Exception
+	{
+		basic.click(ObjectRepository.value_72);
+		basic.click(ObjectRepository.sfdc_importSavedConfig_link);
+		basic.click(ObjectRepository.sfdc_savedconfigurationimport1_button);
+		basic.typeText(ObjectRepository.username_tb, "sunchand");
+		basic.click(ObjectRepository.login_button);
+		basic.typeText(ObjectRepository.password_tb, "cisco123");
+		basic.click(ObjectRepository.login_button);
+		basic.click(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox);
+		basic.typeText(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox, Constants.defaultEstimate);
+		basic.click(ObjectRepository.sfdc_btnSearchImportConfigMenu_button);
+		basic.click(ObjectRepository.value_1129);
+		basic.click(ObjectRepository.sfdc_importEstimate_button);
+		basic.pause(7000);
+		return this;
+	}
+	
 	public DiscountsAndCreditsPage _12_saveAndContinueFromItemsTab() throws Exception
 	{
 		basic.click(ObjectRepository.saveAndCont_itemsTab_button);

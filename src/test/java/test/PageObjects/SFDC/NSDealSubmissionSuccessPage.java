@@ -29,5 +29,10 @@ public class NSDealSubmissionSuccessPage
 		logger.info("Deal Type 2 validation successful");
 		return this;
 	}
+	
+	public String _02_getDealID() throws Exception
+	{
+		return basic.getText(ObjectRepository.dealIdFromSFDCSubmissionPage);
+	}
 
 }

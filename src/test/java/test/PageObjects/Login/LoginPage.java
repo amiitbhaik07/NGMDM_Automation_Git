@@ -48,7 +48,7 @@ public class LoginPage
 	{
 		basic.clearBrowserCache();
 		basic.justNavigate(ObjectRepository.mdmProxy_Url);
-		basic.typeText(ObjectRepository.username_tb, ObjectRepository.mdmProxyUsername);
+		basic.typeText(ObjectRepository.username_tb, ObjectRepository.mdmProxyUsername);		
 		basic.typeText(ObjectRepository.password_tb, ObjectRepository.mdmProxyPassword);
 		basic.click(ObjectRepository.login_button);
 		basic.typeText(ObjectRepository.proxyId_tb, userName);
