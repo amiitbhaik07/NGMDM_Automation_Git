@@ -391,8 +391,23 @@ public class BasicUtils
 			scrollIntoView(xpath);
 		}
 		pause(Constants.defaultPauseMillis);
-		String uiText = "";
-		uiText = driver.findElement(By.xpath(xpath)).getText();
+		String uiText = "";		
+		WebElement w = getWebElement(xpath);
+		
+		//Fetch text from Angular JS application
+		try
+		{
+			String ngModelAttribute = w.getAttribute("ng-model");
+			if(ngModelAttribute!=null && !(ngModelAttribute.trim().equals("")))
+			{
+				JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
+				String text = javascriptExecutor.executeScript("return angular.element(arguments[0]).scope()."+ngModelAttribute+";", w).toString();
+				return text;
+			}				
+		}
+		catch(Exception e){}
+		
+		uiText = w.getText();
 		logger.trace("Got text '"+uiText+"' From UI on XPath = " + xpath);
 		try
 		{
@@ -403,8 +418,7 @@ public class BasicUtils
 				logger.trace("Got text '"+uiText+"' from 'innerHTML' attribute from UI on XPath = " + xpath);
 			}
 		}
-		catch(Exception e){}
-		
+		catch(Exception e){}		
 		//Edited 1st august 2017 ; to remove white spaces
 		if(uiText != null)
 		{
@@ -424,6 +438,21 @@ public class BasicUtils
 		}
 		pause(Constants.defaultPauseMillis);
 		String uiText = "";
+		waitForElementVisible_id(id);
+		WebElement w = driver.findElement(By.id(id));		
+		//Fetch text from Angular JS application
+		try
+		{
+			String ngModelAttribute = w.getAttribute("ng-model");
+			if(ngModelAttribute!=null && !(ngModelAttribute.trim().equals("")))
+			{
+				JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
+				String text = javascriptExecutor.executeScript("return angular.element(arguments[0]).scope()."+ngModelAttribute+";", w).toString();
+				return text;
+			}				
+		}
+		catch(Exception e){}
+		
 		uiText = driver.findElement(By.id(id)).getText();
 		logger.trace("Got text '"+uiText+"' From UI on ID = " + id);
 		try
@@ -438,6 +467,16 @@ public class BasicUtils
 		catch(Exception e){}
 		logger.debug("Successfully got Text '"+uiText+"' from ID = " + id);
 		return uiText;
+	}
+	
+	public String getHiddenText(String xpath) throws Exception
+	{
+		WebDriverWait wait = new WebDriverWait(driver,30);		
+		WebElement w = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));		
+		String ngModelAttribute = w.getAttribute("ng-model");
+		JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
+		String text = javascriptExecutor.executeScript("return angular.element(arguments[0]).scope()."+ngModelAttribute+";", w).toString();
+		return text;	
 	}
 	
 	public void exactMatch1(String xpath, String text) throws Exception

@@ -4,14 +4,14 @@ public class ObjectRepository
 {
 	
 	//Do not delete or edit this counter
-	public static int valueCounterInteger = 1130;
+	public static int valueCounterInteger = 1138;
 	
 	
 	//URLs and Logins :
 	public static String ciscoLogin_Url = "https://sso-test.cisco.com/autho/forms/CECLogin.html";
-	public static String mdmProxy_Url = "http://mdmui-wstg.cloudapps.cisco.com/mdmui/rest/proxyHome";
+	public static String mdmProxy_Url = "https://mdmui-cstg.cloudapps.cisco.com/mdmui/rest/proxyHome";
 	public static String salesforce_url = "https://test.salesforce.com";
-	public static String ccw_proxy_url = "https://pdricw-stage-b2x.cloudapps.cisco.com/ICW/PDR/proxyHome.do";
+	public static String ccw_proxy_url = "http://pdricw-cstg.cloudapps.cisco.com/ICW/PDR/proxyHome.do";
 	public static String mdmProxyUsername = "meghgupt";
 	public static String mdmProxyPassword = "Prisha#2017";
 	public static String ccwProxyUsername = "sunchand";
@@ -47,7 +47,7 @@ public class ObjectRepository
 	public static String sfdc_login_button = "//input[@id='Login']";
 	public static String sfdc_changePasswordCancel_button = "//button[@id='cancel-button']";
 	public static String createNew_tabdropdown = "//div[@id='createNew']/div";
-	public static String sfdc_opportunity_link = "//div[@id='createNewMenu']/a[6]";
+	public static String sfdc_opportunity_link = "//div[@id='createNewMenu']/a[contains(@class,'opportunityMru')]";
 	//public static String sfdc_continue_button = "//td[@id='opptyNewOverride:theForm:theBlock:j_id14:bottom']/input";
 	public static String sfdc_continue_button = "//td[contains(@id,'opptyNewOverride:theForm:theBlock')]/input";
 	public static String sfdc_openSidebar_link = "//span[@id='pinIndicator']";
@@ -119,8 +119,8 @@ public class ObjectRepository
 	public static String value_69 = "//*[@kdfid='doneConfig' and @kdfapp='config' and @kdfpage='xaasui']";
 	public static String sfdc_skuQty_tb = "//*[@kdfid='searchQty' and @kdfapp='Quoting' and @kdfpage='itemstab']";
 	public static String sfdc_addSku_button = "//*[@kdfid='AddSKU' and @kdfapp='Quoting' and @kdfpage='itemstab']";
-	public static String service_duration_tb = "//*[@kdfid='serviceDuration' and @kdfapp='Quoting' and @kdfpage='addServiceItemPage']";
-	public static String service_add_button = "//*[@kdfid='AddServiceSKUButton' and @kdfapp='Quoting' and @kdfpage='addServiceItemPage']";
+	public static String service_duration_tb =  "//input[@ng-model='serviceDuration']"; //"//*[@kdfid='serviceDuration' and @kdfapp='Quoting' and @kdfpage='addServiceItemPage']";
+	public static String service_add_button = "//button[@kdfid='saveBtn' and text()='Add']";   //"//*[@kdfid='AddServiceSKUButton' and @kdfapp='Quoting' and @kdfpage='addServiceItemPage']";
 	public static String value_60 = "//*[@kdfid='createDealBtn' and @kdfapp='Quoting'  and @value='Create Quote']";
 	public static String sfdc_createQuote_label = "//*[contains(text(),'Create Quote')]";
 	public static String sfdc_descriptionProduct_tb = "//*[@kdfid='descriptionProduct' and @kdfapp='Quoting' and @kdfpage='itemstab']";
@@ -1000,6 +1000,7 @@ public class ObjectRepository
 	public static String addservicecancelBtn = "//*[@kdfid='addservicecancelBtn' and @kdfapp='mdmUI' and @kdfpage='ngDealPricing']";
 	
 	public static String firstPublishedScenario = "//*[starts-with(@kdfid,'publishStatus-') and @kdfapp='mdmUI' and @kdfpage='ngScenarioBrowser']/span[text()='Published']/ancestor::tr/descendant::a[starts-with(@kdfid,'scenarioName')]";
+	public static String firstScenario = "//*[starts-with(@kdfid,'scenarioName-') and @kdfapp='mdmUI' and @kdfpage='ngScenarioBrowser']";
 	public static String closeCompareSqf = "//*[@kdfid='close-btn1' and @kdfapp='mdmUI' and @kdfpage='scenarioBrowser']";
 	public static String createNewScenarioTextbox = "//*[@kdfid='name' and @kdfapp='mdmUI' and @kdfpage='ngCreateNewScenario']";
 	public static String createNewScenarioButton = "//*[@kdfid='Continue-btn1' and @kdfapp='mdmUI' and @kdfpage='ngCreateNewScenario']";
@@ -1277,4 +1278,12 @@ public class ObjectRepository
 	public static String value_1127 = "//*[@kdfid='aboutTheDeal' and @kdfapp='quote' and @kdfpage='quote']";
 	public static String value_1128 = "https://pdricw-cstg.cloudapps.cisco.com/ICW/PDR/proxyHome.do";
 	public static String value_1129 = "//input[starts-with(@kdfid,'rdRadCopyQuote_')]/parent::label";
+	public static String value_1130 = "//a[@kdfid='tabInstallMoreAction' and @kdfpage='itemstab' and @kdfapp='Quoting']/strong";
+	public static String value_1134 = "//a[text()='BOM Upload']";
+	public static String value_1133 = "//td[text()='Copy Associated Lead Deal BOM']";
+	public static String value_1132 = "//td[text()='Copy Existing Quote BOM']";
+	public static String value_1131 = "//td[text()='Estimate']";
+	public static String value_1137 = "//a[text()=' TSV']";
+	public static String value_1136 = "//a[text()='CSV']";
+	public static String value_1135 = "//a[text()='XLS/XLSX']";
 }

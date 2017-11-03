@@ -60,18 +60,22 @@ public class ItemsPage
 	public ItemsPage _06_addDefaultService(int qty) throws Exception
 	{
 		_08_addSpecificServiceWithQty(Constants.defaultService, qty);
+		return this;
+		
+		/*_08_addSpecificServiceWithQty(Constants.defaultService, qty);
+		basic.pause(5000);
 		if(basic.knowIfAppears(ObjectRepository.service_duration_tb))
 		{
 			basic.typeText(ObjectRepository.service_duration_tb, "6");
 			basic.click(ObjectRepository.service_add_button);
 		}
-		return this;
+		return this;*/
 	}
 	
 	public ItemsPage _07_addSpecificProductWithQty(String product, int qty) throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
-		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, product);
+		basic.clearUpdateText(ObjectRepository.sfdc_descriptionProduct_tb, product);
 		basic.click(ObjectRepository.sfdc_skuQty_tb);
 		basic.typeText(ObjectRepository.sfdc_skuQty_tb, ""+qty);
 		basic.click(ObjectRepository.sfdc_addSku_button);
@@ -83,10 +87,14 @@ public class ItemsPage
 	public ItemsPage _08_addSpecificServiceWithQty(String service, int qty) throws Exception
 	{
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
-		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, service);
+		basic.clearUpdateText(ObjectRepository.sfdc_descriptionProduct_tb, service);
 		basic.click(ObjectRepository.sfdc_skuQty_tb);
 		basic.typeText(ObjectRepository.sfdc_skuQty_tb, ""+qty);
 		basic.click(ObjectRepository.sfdc_addSku_button);
+		basic.pause(5000);
+		basic.click(ObjectRepository.service_duration_tb);
+		basic.typeText(ObjectRepository.service_duration_tb, "6");
+		basic.click(ObjectRepository.service_add_button);
 		basic.click(ObjectRepository.sfdc_descriptionProduct_tb);
 		logger.info("Added service '"+service+"' with quantity '"+qty+"'");
 		return this;
@@ -94,7 +102,7 @@ public class ItemsPage
 	
 	public ItemsPage _09_addSpecificSubscriptionWithQty(String subscription, int qty) throws Exception
 	{
-		basic.typeText(ObjectRepository.sfdc_descriptionProduct_tb, subscription);
+		basic.clearUpdateText(ObjectRepository.sfdc_descriptionProduct_tb, subscription);
 		basic.click(ObjectRepository.sfdc_skuQty_tb);
 		basic.typeText(ObjectRepository.sfdc_skuQty_tb, ""+qty);
 		basic.click(ObjectRepository.sfdc_addSku_button);
@@ -154,20 +162,40 @@ public class ItemsPage
 	
 	public ItemsPage _12_ImportDefaultEstimate() throws Exception
 	{
-		basic.click(ObjectRepository.value_72);
-		basic.click(ObjectRepository.sfdc_importSavedConfig_link);
-		basic.click(ObjectRepository.sfdc_savedconfigurationimport1_button);
-		basic.typeText(ObjectRepository.username_tb, "sunchand");
-		basic.click(ObjectRepository.login_button);
-		basic.typeText(ObjectRepository.password_tb, "cisco123");
-		basic.click(ObjectRepository.login_button);
-		basic.click(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox);
-		basic.typeText(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox, Constants.defaultEstimate);
-		basic.click(ObjectRepository.sfdc_btnSearchImportConfigMenu_button);
-		basic.click(ObjectRepository.value_1129);
-		basic.click(ObjectRepository.sfdc_importEstimate_button);
-		basic.pause(7000);
-		return this;
+		if(basic.isRewrite())
+		{
+			basic.click("//*[@kdfid='tabInstallMoreAction']/strong");
+			basic.click(ObjectRepository.sfdc_importSavedConfig_link);
+			basic.click(ObjectRepository.value_1056);
+			basic.typeText(ObjectRepository.username_tb, "sunchand");
+			basic.click(ObjectRepository.login_button);
+			basic.typeText(ObjectRepository.password_tb, "cisco123");
+			basic.click(ObjectRepository.login_button);
+			basic.click(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox);
+			basic.typeText(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox, Constants.defaultEstimate);
+			basic.click(ObjectRepository.sfdc_btnSearchImportConfigMenu_button);
+			basic.click(ObjectRepository.value_1129);
+			basic.click(ObjectRepository.sfdc_importEstimate_button);
+			basic.pause(7000);
+			return this;
+		}
+		else
+		{
+			basic.click(ObjectRepository.value_72);		
+			basic.click(ObjectRepository.sfdc_importSavedConfig_link);
+			basic.click(ObjectRepository.sfdc_savedconfigurationimport1_button);
+			basic.typeText(ObjectRepository.username_tb, "sunchand");
+			basic.click(ObjectRepository.login_button);
+			basic.typeText(ObjectRepository.password_tb, "cisco123");
+			basic.click(ObjectRepository.login_button);
+			basic.click(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox);
+			basic.typeText(ObjectRepository.sfdc_txtEstimateSearchTxt_textbox, Constants.defaultEstimate);
+			basic.click(ObjectRepository.sfdc_btnSearchImportConfigMenu_button);
+			basic.click(ObjectRepository.value_1129);
+			basic.click(ObjectRepository.sfdc_importEstimate_button);
+			basic.pause(7000);
+			return this;
+		}			
 	}
 	
 	public DiscountsAndCreditsPage _12_saveAndContinueFromItemsTab() throws Exception

@@ -2,20 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="626967" started-at="2017-10-16T04:51:50Z" finished-at="2017-10-16T05:02:17Z">
+  <suite name="Default suite" duration-ms="143709" started-at="2017-11-03T10:54:33Z" finished-at="2017-11-03T10:56:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="626967" started-at="2017-10-16T04:51:50Z" finished-at="2017-10-16T05:02:17Z">
-      <class name="test.NGMDM_Tabs.TestPOM">
-        <test-method status="PASS" signature="dbConnection()[pri:0, instance:test.NGMDM_Tabs.TestPOM@3532ec19]" name="dbConnection" is-config="true" duration-ms="315" started-at="2017-10-16T10:21:50Z" finished-at="2017-10-16T10:21:50Z">
+    <test name="Default test" duration-ms="143709" started-at="2017-11-03T10:54:33Z" finished-at="2017-11-03T10:56:57Z">
+      <class name="kdfMigration.TestClass">
+        <test-method status="PASS" signature="abcd()[pri:0, instance:kdfMigration.TestClass@59fa1d9b]" name="abcd" duration-ms="143660" started-at="2017-11-03T16:24:33Z" finished-at="2017-11-03T16:26:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dbConnection -->
-        <test-method status="PASS" signature="testDeal00()[pri:0, instance:test.NGMDM_Tabs.TestPOM@3532ec19]" name="testDeal00" duration-ms="626628" started-at="2017-10-16T10:21:50Z" finished-at="2017-10-16T10:32:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeal00 -->
-      </class> <!-- test.NGMDM_Tabs.TestPOM -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- abcd -->
+      </class> <!-- kdfMigration.TestClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

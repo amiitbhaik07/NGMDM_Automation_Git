@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Suite" parallel="true" thread-count="7">
+<suite name="Suite" parallel="true" thread-count="105">
 	<listeners>
        <listener class-name="test.BasicUtils.TestListener"/>
 	</listeners>
@@ -9,11 +9,11 @@
   <test name="Test">
     <classes>
       
-      <class name="test.NGMDM_Tabs.TestPOM"/>
-      
+           <class name="kdfMigration.TestClass"/> 
     
       <!-- 
-      <class name="kdfMigration.TestClass"/> 
+      <class name="test.NGMDM_Tabs.SOTD_Testing"/>
+      <class name="test.NGMDM_Tabs.TestPOM"/>
       <class name="test.NGMDM_Tabs._05_DealQualification"/>  
       <class name="test.NGMDM_Tabs._05_DealQualification_Negation"/>
       <class name="test.NGMDM_Tabs._02_ProxyAndChangeAccess"/>

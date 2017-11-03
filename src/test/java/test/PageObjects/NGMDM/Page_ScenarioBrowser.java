@@ -38,6 +38,13 @@ public class Page_ScenarioBrowser extends Pane_LeftBarAndOrderHeader
 		return this;
 	}
 	
+	public Page_DealPricing _04_openFirstScenario() throws Exception
+	{
+		basic.waitForElementClickable(ObjectRepository.firstScenario);
+		basic.click(ObjectRepository.firstScenario);
+		return new Page_DealPricing(basic);
+	}
+	
 	
 
 }

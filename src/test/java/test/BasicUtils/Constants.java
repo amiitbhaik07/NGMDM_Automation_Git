@@ -37,7 +37,7 @@ public class Constants {
 	//Default SKU Names
 	public static final String defaultProduct = "CISCO1921DC/K9";
 	public static final String defaultService = "CON-SNT3-LAP1252A";		//CON-SNT3-LAP1252A //CON-SNT-00000003
-	public static final String defaultSubscription = "A-WX-NAMED-USER";		//CIP-TRN-APESS-OL= 
+	public static final String defaultSubscription = "IVR-3.X-PORTS=";		//CIP-TRN-APESS-OL= 	//IVR-3.X-PORTS=	//A-WX-NAMED-USER 
 	public static final String defaultOnPremSku = "A-HCS-UC-ERLY-TM"; //"A-HCS-UC-ERLY-TM";
 	public static final String defaultUcsSku = "UCS-FAN-6248UP=";
 	public static final String defaultOaSku = "CON-ECMU-C1FBC45S";

@@ -15,7 +15,7 @@ public class Page_DealPricing extends Pane_LeftBarAndOrderHeader
 	{
 		super(basic);
 		this.basic = basic;
-		_11_expandAll();
+		//_11_expandAll();
 	}	
 	
 	public Popup_FVAssessment _01_openFvAssessment() throws Exception

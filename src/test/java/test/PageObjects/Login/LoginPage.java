@@ -47,13 +47,28 @@ public class LoginPage
 	public Page_MyDealsHomepage _03_ngmdmLogin(String userName) throws Exception
 	{
 		basic.clearBrowserCache();
-		basic.justNavigate(ObjectRepository.mdmProxy_Url);
-		basic.typeText(ObjectRepository.username_tb, ObjectRepository.mdmProxyUsername);		
+		basic.justNavigate(ObjectRepository.ciscoLogin_Url);
+		basic.typeText(ObjectRepository.username_tb, ObjectRepository.mdmProxyUsername);
 		basic.typeText(ObjectRepository.password_tb, ObjectRepository.mdmProxyPassword);
 		basic.click(ObjectRepository.login_button);
+		basic.pause(3000);
+		basic.justNavigate(ObjectRepository.mdmProxy_Url);
 		basic.typeText(ObjectRepository.proxyId_tb, userName);
 		basic.click(ObjectRepository.proxyIdSubmit_button);
 		return new Page_MyDealsHomepage(basic);
+	}
+	
+	public Page_MyDealsHomepage _04_ccwLogin(String userName) throws Exception
+	{
+		basic.clearBrowserCache();
+		basic.justNavigate(ObjectRepository.value_1128);
+		basic.typeText(ObjectRepository.username_tb, "sunchand");
+		basic.click(ObjectRepository.login_button);
+		basic.typeText(ObjectRepository.password_tb, "cisco123");
+		basic.click(ObjectRepository.login_button);
+		basic.typeText(ObjectRepository.value_209, userName);
+		basic.click(ObjectRepository.value_210);
+		return null ;
 	}
 	
 	

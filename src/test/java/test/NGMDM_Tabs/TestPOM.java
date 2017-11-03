@@ -6,12 +6,16 @@ import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import test.BasicUtils.BasicUtils;
+import test.BasicUtils.Constants;
 import test.BasicUtils.LaunchBrowsers;
+import test.BasicUtils.ObjectRepository;
 import test.PageObjects.Login.LoginPage;
 
 public class TestPOM 
@@ -26,35 +30,80 @@ public class TestPOM
 		con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:oracledb","sys as sysdba","amiitonoma07");
 		stmt = con.createStatement();
 	}
-	
 	public void createDealType2() throws Exception
 	{
 		System.out.println("Deal type 2");		
 		WebDriver driver = LaunchBrowsers.launchBrowser();
-		BasicUtils basic = new BasicUtils(driver);	
+		BasicUtils basic = new BasicUtils(driver);
 		
-		throw new Exception();
 		
-		/*String optyName = "NGMDM_Automation_DNT_DealType2_RNSD_ImportedEstimate_" + new SimpleDateFormat("dd_MMM_hh_mm_ss").format(new Date());
-		String dealId = 
-		new LoginPage(basic)
-						._01_sfdcLogin("thaymore", "cisco123")
-						._01_createNewParentOpportunity()
-						._02_1_fillAndSaveNewOpportunitySFDCPageDefault(optyName)
-						._01_proceedWithDefaultValuesAndContinue()
-						._01_createQuoteFromOpty()
-						._00_proceedWithDefaultValues(true)
-						._12_ImportDefaultEstimate()
-						._12_saveAndContinueFromItemsTab()
-						._01_addDefaultNSDiscount()
-						._03_saveAndContinueFromDiscountsTab()
-						._03_finishAndSaveFromRnSTab()
-						._01_continueToQualForm()
-						._07_fillQualForm_ID_11()
-						._09_saveAndContinueFromQualForm()
-						._01_submitDealForQualification(true)
-						._01_AssertDealSuccessPage()
-						._02_getDealID();
+		String optyName = "NGMDM_Automation_DNT_DealType2_P_S_" + new SimpleDateFormat("dd_MMM_hh_mm_ss").format(new Date());
+		String dealId = new LoginPage(basic)
+		._01_sfdcLogin("thaymore", "cisco123")
+		._01_createNewParentOpportunity()
+		._02_1_fillAndSaveNewOpportunitySFDCPageDefault(optyName)
+		._01_proceedWithDefaultValuesAndContinue()
+		._01_createQuoteFromOpty()
+		._00_proceedWithDefaultValues(false)
+		._02_addDefaultProduct()
+		._03_addDefaultService()
+		._04_addDefaultSubscription()
+		._12_saveAndContinueFromItemsTab()
+		._01_addDefaultNSDiscount()
+		._03_saveAndContinueFromDiscountsTab()
+		._03_finishAndSaveFromRnSTab()
+		._01_continueToQualForm()
+		._07_fillQualForm_ID_11()
+		._09_saveAndContinueFromQualForm()
+		._01_submitDealForQualification(false)
+		._01_AssertDealSuccessPage()
+		._02_getDealID();
+		
+		/*String optyName = "NGMDM_Automation_DNT_DealType2_ImportedEstimate_S_" + new SimpleDateFormat("dd_MMM_hh_mm_ss").format(new Date());
+		String dealId = new LoginPage(basic)
+		._01_sfdcLogin("thaymore", "cisco123")
+		._01_createNewParentOpportunity()
+		._02_1_fillAndSaveNewOpportunitySFDCPageDefault(optyName)
+		._01_proceedWithDefaultValuesAndContinue()
+		._01_createQuoteFromOpty()
+		._00_proceedWithDefaultValues(false)
+		._12_ImportDefaultEstimate()
+		._12_saveAndContinueFromItemsTab()
+		._01_addDefaultNSDiscount()
+		._03_saveAndContinueFromDiscountsTab()
+		._03_finishAndSaveFromRnSTab()
+		._01_continueToQualForm()
+		._07_fillQualForm_ID_11()
+		._09_saveAndContinueFromQualForm()
+		._01_submitDealForQualification(false)
+		._01_AssertDealSuccessPage()
+		._02_getDealID();*/
+		
+		
+		
+		/*String optyName = "NGMDM_Automation_DNT_DealType2_FVA_" + new SimpleDateFormat("dd_MMM_hh_mm_ss").format(new Date());
+		String dealId = new LoginPage(basic)
+		._01_sfdcLogin("thaymore", "cisco123")
+		._01_createNewParentOpportunity()
+		._02_1_fillAndSaveNewOpportunitySFDCPageDefault(optyName)
+		._01_proceedWithDefaultValuesAndContinue()
+		._01_createQuoteFromOpty()
+		._00_proceedWithDefaultValues(false)
+		._05_addDefaultProduct(9999)
+		._06_addDefaultService(99999)
+		._12_saveAndContinueFromItemsTab()
+		._01_addDefaultNSDiscount()
+		._03_saveAndContinueFromDiscountsTab()
+		._03_finishAndSaveFromRnSTab()
+		._01_continueToQualForm()
+		._07_fillQualForm_ID_11()
+		._09_saveAndContinueFromQualForm()
+		._01_submitDealForQualification(false)
+		._01_AssertDealSuccessPage()
+		._02_getDealID();*/
+		
+		
+						
 		
 		try
 		{
@@ -75,7 +124,7 @@ public class TestPOM
 		}
 		catch(Exception e){
 			e.printStackTrace();
-		}*/
+		}
 	}
 	
 	@Test
@@ -84,7 +133,8 @@ public class TestPOM
 		createDealType2();
 	}
 	
-	@Test
+	
+	/*@Test
 	public void testDeal01() throws Exception
 	{
 		createDealType2();
@@ -355,7 +405,7 @@ public class TestPOM
 	public void testDeal39() throws Exception
 	{
 		createDealType2();
-	}
+	}*/
 	
 	
 	

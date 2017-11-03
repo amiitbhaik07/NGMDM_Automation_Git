@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="7" name="Failed suite [Suite]" parallel="true">
-  <listeners>
-    <listener class-name="test.BasicUtils.TestListener"/>
-  </listeners>
-  <test name="Test(failed)" parallel="true">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="test.NGMDM_Tabs.TestPOM">
+      <class name="kdfMigration.TestClass">
         <methods>
-          <include name="dbConnection"/>
-          <include name="testDeal00"/>
+          <include name="abcd"/>
         </methods>
-      </class> <!-- test.NGMDM_Tabs.TestPOM -->
+      </class> <!-- kdfMigration.TestClass -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

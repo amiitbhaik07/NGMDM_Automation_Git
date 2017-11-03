@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -31,7 +32,7 @@ public class TestListener implements ITestListener
         		driver.quit();
         	}
         }
-        catch(Exception e){}		
+        catch(Exception e){}
 	}
 
 	public void onTestFailure(ITestResult result) {
@@ -66,10 +67,14 @@ public class TestListener implements ITestListener
         
         try
         {
+        	driver = (WebDriver)result.getAttribute("driver");
         	if(LaunchBrowsers.quitBrowserOnFailure)
         	{
-        		driver = (WebDriver)result.getAttribute("driver");
         		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^Closing Browser");
+        		driver.quit();
+        	}
+        	else if(driver instanceof PhantomJSDriver)
+        	{
         		driver.quit();
         	}
         }
