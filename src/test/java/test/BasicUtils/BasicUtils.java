@@ -439,7 +439,7 @@ public class BasicUtils
 		pause(Constants.defaultPauseMillis);
 		String uiText = "";
 		waitForElementVisible_id(id);
-		WebElement w = driver.findElement(By.id(id));		
+		WebElement w = driver.findElement(By.id(id));
 		//Fetch text from Angular JS application
 		try
 		{
