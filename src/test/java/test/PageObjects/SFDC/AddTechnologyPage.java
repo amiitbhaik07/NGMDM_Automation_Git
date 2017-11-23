@@ -27,8 +27,7 @@ public class AddTechnologyPage
 	{
 		basic.pause(15000);
 		basic.waitForElementVisible(ObjectRepository.value_112);
-		//basic.selectOption(ObjectRepository.value_112, "GOOGLE ACCESS US thaymore");
-		basic.selectOptionWhereValueLike(ObjectRepository.value_112, "thaymore");
+		basic.selectOptionWhereValueLike(ObjectRepository.value_112, forecastingPositionLike);
 		return this;
 	}
 	

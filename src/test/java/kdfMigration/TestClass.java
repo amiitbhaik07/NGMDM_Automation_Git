@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import test.BasicUtils.BasicUtils;
+import test.BasicUtils.By1;
 import test.BasicUtils.LaunchBrowsers;
 import test.BasicUtils.Modules;
 import test.BasicUtils.ObjectRepository;
@@ -21,7 +22,7 @@ public class TestClass
 	@Test
 	public void abcd() throws Exception
 	{
-		WebDriver driver = LaunchBrowsers.launchBrowser("firefox");
+		WebDriver driver = LaunchBrowsers.launchBrowser("chrome");
 		BasicUtils basic = new BasicUtils(driver);
 		
 		basic.justNavigate("https://pwbenchng-stage.cloudapps.cisco.com/pwbench/#/homeDashboard");
@@ -40,23 +41,34 @@ public class TestClass
 		
 		
 		
-		ArrayList<String> myData = new ArrayList<String>();
-		
+		/*ArrayList<String> myData = new ArrayList<String>();		
 		myData.add(basic.getText("//input[@ng-model='itemName']"));
 		myData.add(basic.getText("//input[contains(@ng-model,'BasePrice')]"));
 		myData.add(basic.getText("//input[contains(@ng-model,'EffectiveUplift')]"));
 		myData.add(basic.getText("//input[contains(@ng-model,'ForexRate')]"));
 		myData.add(basic.getText("//input[contains(@ng-model,'RoundingRule')]"));
-		myData.add(basic.getText("//input[contains(@ng-model,'ListPrice')]"));
+		myData.add(basic.getText("//input[contains(@ng-model,'ListPrice')]"));*/
+		
+		
+		
+		driver.findElement(By1.byNgModel("itemName"));
+		
 		
 		
 		
 		System.out.println("===================================================================================================================");
 		
-		for(String a : myData)
-		{
-			System.out.println(a);
-		}		
+		System.out.println(basic.getText("//input[@ng-model='itemName']"));
+		
+		System.out.println("===================================================================================================================");
+		
+		System.out.println(basic.getText(driver.findElement(By1.byNgModel("itemName"))));
+		
+		basic.getWebElement(By1.byNgModel("test"));
+		
+		System.out.println("===================================================================================================================");
+		
+		
 		
 		System.out.println("===================================================================================================================");
 		

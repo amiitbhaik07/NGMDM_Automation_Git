@@ -72,6 +72,13 @@ public class BasicUtils
 		pause(Constants.defaultPauseMillis);
 	}
 	
+	private void waitForElementPresence(By by) throws Exception
+	{
+		waitForPreloaderDisappear();
+		wait.until(ExpectedConditions.presenceOfElementLocated(by));
+		pause(Constants.defaultPauseMillis);
+	}
+	
 	private void waitForElementPresence_id(String id) throws Exception
 	{
 		waitForPreloaderDisappear();
@@ -299,6 +306,13 @@ public class BasicUtils
 		pause(Constants.defaultPauseMillis);
 	}
 	
+	public void waitForElementVisible(By by) throws Exception
+	{
+		pause(Constants.defaultPauseMillis);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+		pause(Constants.defaultPauseMillis);
+	}
+	
 	public void waitForElementVisible_id(String id) throws Exception
 	{
 		logger.trace("Waiting for Element Visible : ID = " + id);
@@ -425,6 +439,42 @@ public class BasicUtils
 			uiText = uiText.trim();
 		}
 		logger.debug("Successfully got Text '"+uiText+"' from XPath = " + xpath);
+		return uiText;
+	}
+	
+	public String getText(WebElement w) throws Exception
+	{
+		waitForPreloaderDisappear();
+		pause(Constants.defaultPauseMillis);
+		String uiText = "";
+		
+		//Fetch text from Angular JS application
+		try
+		{
+			String ngModelAttribute = w.getAttribute("ng-model");
+			if(ngModelAttribute!=null && !(ngModelAttribute.trim().equals("")))
+			{
+				JavascriptExecutor javascriptExecutor = (JavascriptExecutor)driver;
+				String text = javascriptExecutor.executeScript("return angular.element(arguments[0]).scope()."+ngModelAttribute+";", w).toString();
+				return text;
+			}				
+		}
+		catch(Exception e){}
+		
+		uiText = w.getText();
+		try
+		{
+			if(uiText.equalsIgnoreCase("") || uiText==null)
+			{
+				uiText = w.getAttribute("innerHTML");
+			}
+		}
+		catch(Exception e){}		
+		//Edited 1st august 2017 ; to remove white spaces
+		if(uiText != null)
+		{
+			uiText = uiText.trim();
+		}
 		return uiText;
 	}
 	
@@ -1268,6 +1318,13 @@ public class BasicUtils
 		waitForElementPresence(xpath);
 		waitForElementVisible(xpath);
 		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public WebElement getWebElement(By by) throws Exception
+	{
+		waitForElementPresence(by);
+		waitForElementVisible(by);
+		return driver.findElement(by);
 	}
 	
 	public String getAttribute(String xpath, String attributeName) throws Exception
